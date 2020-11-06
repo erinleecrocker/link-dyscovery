@@ -32,7 +32,7 @@ const userSeed = [
   },
 ];
 
-db.User.deleteMany({})
+db.User.remove({})
   .then(() => db.Workout.collection.insertMany(userSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");

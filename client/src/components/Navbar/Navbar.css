@@ -1,0 +1,34 @@
+/* navbar background color */
+.navbar {
+    background-color:#BAA4C7;
+    margin-bottom: 40px;
+}
+/* heading for navbar */
+img {
+    margin-top: 5px;
+    width: 250px;
+    height: 57px;
+}
+/* Toggler color */
+.navbar-toggler {
+    background-color: black;
+}
+
+.nav-bar-link{
+    color: black;
+}
+/* hover over links color */
+a:active{
+    color:#F9DBC1;
+}
+
+.nav-bar-link:hover {
+    color:#F9DBC1;
+}
+
+ul {
+    list-style: none;
+}
+li{
+    margin-right: 25px;
+}

@@ -1,0 +1,35 @@
+.form-group{
+    display: inline-block;
+    
+}
+/* #formgroup{
+    display:grid;
+    grid-template-columns: max-content max-content;
+    grid-gap:5px;
+} */
+.label-form.col-6{
+    padding-top: 5px;
+    text-align: right;
+    display: inline-block;
+    
+ 
+}
+.label-form.col-6{
+    content: ":"; 
+}
+.control-form.col-6{
+    text-align: left;
+    display: inline-block;
+}
+.col-6{
+    display: inline-block;
+}
+.right {
+    float: right;
+  }
+  .left {
+    float: left;
+    /* right: 0px;
+    width: 300px; */
+    padding: 10px;
+  }

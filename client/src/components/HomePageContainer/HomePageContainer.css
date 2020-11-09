@@ -1,0 +1,20 @@
+#intro-container{
+    background: #F9DBC1;
+    margin-bottom: 30px;
+}
+.heading-row {
+    margin-top: 20px;
+    
+    justify-content: center;
+}
+.card-text{
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#main-img {
+    width: 443px; 
+    height: 100px;
+    background: #F9DBC1;
+}

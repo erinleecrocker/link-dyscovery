@@ -7,7 +7,7 @@ function LoginCard(props) {
     <div className="container">
       <div className="card">
         <div className="card-body">
-          <h3 className="card-title">Login</h3>
+          <h2 className="card-title">Login</h2>
           <p className="card-text">{props.children}</p>
         </div>
       </div>

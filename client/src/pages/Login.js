@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
+import { FormGroup, FormControl, FormLabel } from "../components/Form/Form";
 import LoginCard from "../components/LoginCard/LoginCard"
+import SubmitButton from "../components/Submit Button/SubmitButton"
 // import "./Login.css";
 
 export default function Login() {
@@ -20,7 +21,7 @@ export default function Login() {
       <div className="Login">
         <form onSubmit={handleSubmit}>
           <FormGroup controlId="email" bsSize="large">
-            <FormLabel>Email</FormLabel>
+            <FormLabel>E-mail: </FormLabel>
             <FormControl
               autoFocus
               type="email"
@@ -29,16 +30,16 @@ export default function Login() {
             />
           </FormGroup>
           <FormGroup controlId="password" bsSize="large">
-            <FormLabel>Password</FormLabel>
+            <FormLabel>Password: </FormLabel>
             <FormControl
               value={password}
               onChange={e => setPassword(e.target.value)}
               type="password"
             />
           </FormGroup>
-          <Button block bsSize="large" disabled={!validateForm()} type="submit">
+          <SubmitButton  disabled={!validateForm()} type="submit">
             Login
-          </Button>
+          </SubmitButton>
         </form>
       </div>
       </LoginCard>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FormGroup, FormControl, FormLabel } from "../components/Form/Form";
 import LoginCard from "../components/LoginCard/LoginCard"
 import SubmitButton from "../components/Submit Button/SubmitButton"
+import Navbar from '../components/Navbar/Navbar';
 // import "./Login.css";
 
 export default function Login() {
@@ -17,14 +18,11 @@ export default function Login() {
     }
   
     return (
-        <div className="container">
-        <div className="row">
-          <div className="col-12">
+        <>
+        <Navbar/>
         <LoginCard>
-      
       <div className="Login">
         <form onSubmit={handleSubmit}>
-        <div className="row">
           <FormGroup controlId="email" bsSize="large">
             <FormLabel>E-mail: </FormLabel>
             <FormControl
@@ -34,8 +32,7 @@ export default function Login() {
               onChange={e => setEmail(e.target.value)}
             />
           </FormGroup>
-          </div>
-          <div className="row">
+          <div>
           <FormGroup controlId="password" bsSize="large">
             <FormLabel>Password: </FormLabel>
             <FormControl
@@ -45,7 +42,7 @@ export default function Login() {
             />
           </FormGroup>
           </div>
-          <div className="row">
+          <div>
           <SubmitButton  disabled={!validateForm()} type="submit">
             Login
           </SubmitButton>
@@ -53,8 +50,6 @@ export default function Login() {
         </form>
       </div>
       </LoginCard>
-      </div>
-      </div>
-    </div>
+      </>
     );
   }

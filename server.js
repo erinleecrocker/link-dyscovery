@@ -1,9 +1,17 @@
+require('dotenv').config()
 const express = require("express");
 const mongoose = require("mongoose");
 // const path = require("path");
 
-const PORT = process.env.PORT || 3001;
 const app = express();
+
+const PORT = process.env.PORT || 3001;
+
+// Bringing in Controllers:
+const UserController = require("./controllers/userController");
+const ResourceController = require("./controllers/resourceController")
+const FeedbackController = require("./controllers/feedbackController");
+
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -38,11 +46,11 @@ app.get("/api/config", (req, res) => {
     });
   });
 
-  app.get("/api/users", (req, res) => {
-    res.json({
-      success: true,
-    });
-  });
+
+  app.use("/api/user", UserController);
+  app.use("/api/resource", ResourceController);
+  app.use("/api/feedback", FeedbackController);
+
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);

@@ -4,31 +4,31 @@ const Schema = mongoose.Schema;
 const ResourceSchema = new Schema({
   category: {
     type: String,
-    trim: true,
+    // trim: true,
   },
   title: {
     type: String,
-    trim: true,
+    // trim: true,
   },
   url: {
     type: String,
-    trim: true,
+    // trim: true,
   },
   description: {
     type: String,
-    trim: true,
+    // trim: true,
   },
-  userCreatedOn: {
-    type: Date,
-  },
-  createdBy: {
-    type: Schema.Types.ObjectId,
-    ref: "User",
-  },
-  feedback: {
-    type: Schema.Types.ObjectId,
-    ref: "Feedback",
-  },
+  // userCreatedOn: {
+  //   type: Date,
+  // },
+  // createdBy: {
+  //   type: Schema.Types.ObjectId,
+  //   ref: "User",
+  // },
+  // feedback: {
+  //   type: Schema.Types.ObjectId,
+  //   ref: "Feedback",
+  // },
   
   
 });

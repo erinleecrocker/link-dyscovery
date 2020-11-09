@@ -1,6 +1,6 @@
 module.exports = {
     User: require("./User"),
-    // Resource: require("./Resource"),
-    // Feedback: require("./Feedback"),
+    Resource: require("./Resource"),
+    Feedback: require("./Feedback"),
   };
   

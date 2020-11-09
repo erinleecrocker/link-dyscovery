@@ -12,7 +12,7 @@ export function FormGroup(props) {
 export function FormLabel(props) {
   return (
     <div className="label-form col-6">
-      <label for="staticEmail" className="form-label">
+      <label htmlFor="staticEmail" className="form-label">
         {props.children}
       </label>
     </div>

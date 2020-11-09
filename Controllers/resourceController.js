@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
 });
 
 router.get("/:id", (req, res) => {
-  db.Resource.find({ _id: req.params.id }).then((foundResource) => {
+  db.Resource.findById({ _id: req.params.id }).then((foundResource) => {
     res.json(foundResource);
   });
 });

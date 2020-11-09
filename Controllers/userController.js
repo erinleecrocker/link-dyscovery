@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
 });
 
 router.get("/:id", (req, res) => {
-    db.User.find({ _id: req.params.id}).then((foundUser) => {
+    db.User.findById({ _id: req.params.id}).then((foundUser) => {
         res.json(foundUser);
       });
 });

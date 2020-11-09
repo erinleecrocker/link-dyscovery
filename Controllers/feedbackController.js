@@ -11,7 +11,7 @@ router.get("/", (req, res) => {
 });
 
 router.get("/:id", (req, res) => {
-    db.Feedback.find({ _id: req.params.id}).then((foundFeedback) => {
+    db.Feedback.findById({ _id: req.params.id}).then((foundFeedback) => {
         res.json(foundFeedback);
       });
 });

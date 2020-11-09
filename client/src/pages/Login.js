@@ -17,9 +17,14 @@ export default function Login() {
     }
   
     return (
+        <div className="container">
+        <div className="row">
+          <div className="col-12">
         <LoginCard>
+      
       <div className="Login">
         <form onSubmit={handleSubmit}>
+        <div className="row">
           <FormGroup controlId="email" bsSize="large">
             <FormLabel>E-mail: </FormLabel>
             <FormControl
@@ -29,6 +34,8 @@ export default function Login() {
               onChange={e => setEmail(e.target.value)}
             />
           </FormGroup>
+          </div>
+          <div className="row">
           <FormGroup controlId="password" bsSize="large">
             <FormLabel>Password: </FormLabel>
             <FormControl
@@ -37,11 +44,17 @@ export default function Login() {
               type="password"
             />
           </FormGroup>
+          </div>
+          <div className="row">
           <SubmitButton  disabled={!validateForm()} type="submit">
             Login
           </SubmitButton>
+          </div>
         </form>
       </div>
       </LoginCard>
+      </div>
+      </div>
+    </div>
     );
   }

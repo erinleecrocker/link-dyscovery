@@ -2,22 +2,27 @@ import React from "react";
 import "./Form.css";
 
 export function FormGroup(props) {
-    return(
-  <div className="form-group row">{props.children}</div>);
+  return (
+        <div id="formgroup" className="form-group row">
+          {props.children}
+        </div>
+  );
 }
 
 export function FormLabel(props) {
-    return(
-  <label for="staticEmail" className="col-sm-2 col-form-label">
-    {props.children}
-  </label>);
+  return (
+    <div className="label-form col-6">
+      <label for="staticEmail" className="form-label">
+        {props.children}
+      </label>
+    </div>
+  );
 }
 
 export function FormControl(props) {
-    return(
-  <div className="col-sm-10">
-    <input
-      {...props}
-    />
-  </div>);
+  return (
+    <div className="control-form col-6">
+      <input className="form-control" {...props} />
+    </div>
+  );
 }

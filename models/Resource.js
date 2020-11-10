@@ -18,13 +18,14 @@ const ResourceSchema = new Schema({
     type: String,
     // trim: true,
   },
-  // userCreatedOn: {
-  //   type: Date,
-  // },
-  // createdBy: {
-  //   type: Schema.Types.ObjectId,
-  //   ref: "User",
-  // },
+  userCreatedOn: {
+    type: Date,
+    default: Date.now
+  },
+  createdBy: {
+    type: Schema.Types.ObjectId,
+    ref: "User",
+  },
   // feedback: {
   //   type: Schema.Types.ObjectId,
   //   ref: "Feedback",

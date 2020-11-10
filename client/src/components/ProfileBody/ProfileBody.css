@@ -1,0 +1,15 @@
+/* .container{
+    margin-top: 200px;
+} */
+.defaultStyle{
+    padding: 20px;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.11), 2px 4px 5px 2px rgba(0, 0, 0, 0.11);
+}
+
+#profilePic{
+    width: 100%;
+    margin: 5px;
+    height: auto;
+}

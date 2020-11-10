@@ -1,16 +1,21 @@
 import React from "react";
-import Login from "./pages/Login";
+// import Login from "./pages/Login";
+import Home from "./pages/Home";
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 import './App.css';
-// import HomePageContainer from './components/HomePageContainer/HomePageContainer';
 
 
 function App() {
   return (
     <div className="App">
-      {/* <HomePageContainer/> */}
-      <Login></Login>
+        {/* <Navbar/> */}
+          <Home/>
+            {/* <Login></Login> */}
+        {/* <Footer/> */}
     </div>
   );
+  
 }
 
 export default App;

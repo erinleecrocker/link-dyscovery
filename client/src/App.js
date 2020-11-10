@@ -32,7 +32,7 @@ function App() {
           <Route exact path="/user-resources" component={UserResources} />
           <Route exact path="/ResourceCategory" component={ResourceCategory} />
           <Route exact path="/verified-resources" component={VerifiedResources} />
-        
+
         </div>
       </BrowserRouter>
     </>

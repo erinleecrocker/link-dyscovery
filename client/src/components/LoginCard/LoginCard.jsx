@@ -7,7 +7,7 @@ function LoginCard(props) {
     <div className="container login-container">
       <div className="card">
         {/* <div className="card-body"> */}
-          <h2 className="card-title">Login</h2>
+          {/* <h2 className="card-title">Login</h2> */}
           <div className="card-text">{props.children}</div>
         </div>
         </div>

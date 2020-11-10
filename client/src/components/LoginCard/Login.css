@@ -1,6 +1,6 @@
 .container{
     width: 40rem;
-    border: solid #F9DBC1;
+    border: none #F9DBC1;
     background-color: #F9DBC1;
     position: absolute;
     top: 50%;
@@ -13,20 +13,24 @@
 h2{
     text-align: center;
 }
-/* .card{
-    text-align: auto;
-} */
+
 .card-body{
-    width: 40rem;
-    border: solid #F9DBC1;
+    border: none #F9DBC1;
     background-color: #F9DBC1;
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) */
+
 }
 .card{
-    border: solid #F9DBC1;
+    border: none #F9DBC1;
     background-color: #F9DBC1;
+}
+.card-text{
+    border: none #F9DBC1;
+    background-color: #F9DBC1;
+}
+.card-title{
+    border: none #F9DBC1;
+    background-color: #F9DBC1;
+}
+div{
+    border: none #F9DBC1 !important;
 }

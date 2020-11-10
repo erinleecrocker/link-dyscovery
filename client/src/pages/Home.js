@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import MainLogo from "../images/443x100.png";
 import '../components/HomePageContainer/HomePageContainer.css';
@@ -56,16 +55,3 @@ const Home = () => {
 };
 
 export default Home;
-=======
-import React from 'react';
-
-const Home = () => {
-    return (
-        <div>
-            <h1>This is the Home Page.</h1>
-        </div>
-    );
-};
-
-export default Home;
->>>>>>> 3fb47cc02f03c4b72cd685d8ab409c7f66470722

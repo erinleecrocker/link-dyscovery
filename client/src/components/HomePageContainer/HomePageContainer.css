@@ -1,15 +1,14 @@
-#intro-container{
+#home-container{
     background: #F9DBC1;
     margin-top: 20px;
     margin-bottom: 30px;
-    max-width: 1467px;
-    max-height: 473px;
+    
 }
-.heading-row {
+.home-login-row {
     margin-top: 20px;
     justify-content: center;
 }
-.card-text{
+.home-card-text{
     margin-bottom: 40px;
     margin-left: 20px;
     margin-right: 20px;

@@ -28,6 +28,7 @@ a:active{
 
 ul {
     list-style: none;
+    font-size: 15pt;
 }
 li{
     margin-right: 25px;

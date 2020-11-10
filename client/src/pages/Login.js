@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FormGroup, FormControl, FormLabel } from "../components/Form/Form";
 import LoginCard from "../components/LoginCard/LoginCard"
 import SubmitButton from "../components/Submit Button/SubmitButton"
-import Navbar from '../components/Navbar/Navbar';
 // import "./Login.css";
 
 export default function Login() {
@@ -19,9 +18,9 @@ export default function Login() {
   
     return (
         <>
-        <Navbar/>
+        <div className="Login">
         <LoginCard>
-      <div className="Login">
+      
         <form onSubmit={handleSubmit}>
           <FormGroup controlId="email" bsSize="large">
             <FormLabel>E-mail: </FormLabel>
@@ -48,8 +47,9 @@ export default function Login() {
           </SubmitButton>
           </div>
         </form>
-      </div>
+      
       </LoginCard>
+      </div>
       </>
     );
   }

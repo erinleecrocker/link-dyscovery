@@ -5,7 +5,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import CreateAccount from "./pages/CreateAccount";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import ProfilePage from "./pages/ProfilePage";
+import Profile from "./pages/Profile";
 import UserResources from "./pages/UserResources";
 import ResourceCategory from "./pages/ResourceCategory";
 import VerifiedResources from "./pages/VerifiedResources";
@@ -27,7 +27,7 @@ function App() {
           <Route exact path="/link-dyscovery" component={Home} />
           <Route exact path="/create-account" component={CreateAccount} />
           <Route exact path="/login" component={Login} />
-          <Route exact path="/profile" component={ProfilePage} />
+          <Route exact path="/profile" component={Profile} />
           <Route exact path="/user-resources" component={UserResources} />
           <Route exact path="/ResourceCategory" component={ResourceCategory} />
           <Route exact path="/verified-resources" component={VerifiedResources} />

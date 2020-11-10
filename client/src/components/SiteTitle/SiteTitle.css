@@ -1,0 +1,10 @@
+.home-row {
+    justify-content: center;
+    border-bottom: solid 2px #BAA4C7;
+}
+
+#main-img {
+    margin-top: 30px;
+    width: 443px; 
+    height: 100px;
+}

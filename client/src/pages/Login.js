@@ -18,7 +18,8 @@ export default function Login() {
   
     return (
         <>
-         <div className="Login">
+         {/* <div className="Login"> */}
+         <div className="container">
         <LoginCard>
        
         <form onSubmit={handleSubmit}>

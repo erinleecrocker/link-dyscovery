@@ -4,13 +4,15 @@ import '../components/HomePageContainer/HomePageContainer.css';
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import LargeButton from "../components/LargeButton/LargeButton";
+import LoginCard from "../components/LoginCard/LoginCard"
 
 
 const Home = () => {
   return (
     <div>
-        <Navbar/>
+        {/* <Navbar/> */}
       <div className="container">
+      <LoginCard>
       <div className="row heading-row align-items-center">
             <img id="main-img" src={MainLogo} />
             <p>Communicating Differently Together</p>
@@ -48,7 +50,9 @@ const Home = () => {
             </div>
           </div>
         </div>
+        </LoginCard>
       </div>
+      
       <Footer/>
     </div>
   );

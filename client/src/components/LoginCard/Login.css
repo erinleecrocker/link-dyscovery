@@ -1,4 +1,4 @@
-.card{
+.container{
     width: 40rem;
     border: solid #F9DBC1;
     background-color: #F9DBC1;
@@ -6,7 +6,9 @@
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 h2{
     text-align: center;
@@ -14,3 +16,17 @@ h2{
 /* .card{
     text-align: auto;
 } */
+.card-body{
+    width: 40rem;
+    border: solid #F9DBC1;
+    background-color: #F9DBC1;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) */
+}
+.card{
+    border: solid #F9DBC1;
+    background-color: #F9DBC1;
+}

@@ -1,8 +1,8 @@
 /* navbar background color */
 .navbar {
     background-color:#BAA4C7;
-    /* margin-bottom: 40px;
-    position: fixed; */
+    position: fixed;
+    height: 75px;
 }
 /* heading for navbar */
 img {

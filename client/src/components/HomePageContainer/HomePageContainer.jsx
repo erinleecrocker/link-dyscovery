@@ -6,14 +6,14 @@ import './HomePageContainer.css';
 const HomePageContainer = () => {
   return (
     <div className="container">
-        <div className="row heading-row align-items-center">
+        <div className="row home-row align-items-center">
           <img id="main-img" src={MainLogo} />
           <p>Communicating Differently Together</p>
         </div>
 
-        <div className="card" id="intro-container">
+        <div className="card" id="home-container">
           <div className="card-body">
-            <p className="card-text">
+            <p className="card-text home-card-text">
               Welcome to Link Dyscovery! This application is a place for adults
               living with learning disabilities to find, rate, and share
               resources in a convenient and safe place with other like minded

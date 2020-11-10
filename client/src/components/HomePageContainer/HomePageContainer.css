@@ -1,20 +1,23 @@
 #intro-container{
     background: #F9DBC1;
+    margin-top: 20px;
     margin-bottom: 30px;
+    max-width: 1467px;
+    max-height: 473px;
 }
 .heading-row {
     margin-top: 20px;
-    
     justify-content: center;
 }
 .card-text{
     margin-bottom: 40px;
     margin-left: 20px;
     margin-right: 20px;
+    font-size: 20px;
 }
 
 #main-img {
     width: 443px; 
     height: 100px;
-    background: #F9DBC1;
+    border-bottom: solid 2px #BAA4C7;
 }

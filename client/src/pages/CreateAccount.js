@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import AuthContext from "../../context/AuthContext";
 import axios from "axios";
-import SignupForm from "../../components/SignupForm/SignupForm";
+import SignupForm from "../components/SignupForm/SignupForm";
 import { useHistory } from "react-router-dom";
 
 const SignUp = () => {

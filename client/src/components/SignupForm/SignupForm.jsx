@@ -8,12 +8,13 @@ const SignupForm = ({ buttonText, handleSubmit, slug }) => {
   const [password, setPassword] = useState("");
   const firstInputRef = useRef();
 
-  useEffect(() => {
-    firstInputRef.current.focus();
-  }, []);
+  // useEffect(() => {
+  //   firstInputRef.current.focus();
+  // }, []);
 
   return (
       <LoginCard>
+        <h2 className="card-title">Create Account</h2>
           <div>
     <form
       onSubmit={(e) => {

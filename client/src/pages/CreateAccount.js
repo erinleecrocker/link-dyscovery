@@ -23,11 +23,14 @@ const SignUp = () => {
   };
 
   return (
-            <SignupForm
-            handleSubmit={handleSubmit}
-            buttonText="Create Account"
-            slug="signup"
-          />
+    <>
+      <Navbar />
+      <SignupForm
+        handleSubmit={handleSubmit}
+        buttonText="Create Account"
+        slug="signup"
+      />
+    </>
   );
 };
 

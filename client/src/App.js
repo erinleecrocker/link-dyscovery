@@ -11,6 +11,7 @@ import ResourceCategory from "./pages/ResourceCategory";
 import VerifiedResources from "./pages/VerifiedResources";
 // Component Imports
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 // CSS Imports
 import './App.css';
 // import HomePageContainer from './components/HomePageContainer/HomePageContainer';
@@ -30,9 +31,9 @@ function App() {
           <Route exact path="/login" component={Login} />
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/user-resources" component={UserResources} />
-          <Route exact path="/ResourceCategory" component={ResourceCategory} />
+          <Route exact path="/resource-category" component={ResourceCategory} />
           <Route exact path="/verified-resources" component={VerifiedResources} />
-
+        <Footer />
         </div>
       </BrowserRouter>
     </>

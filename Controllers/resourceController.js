@@ -3,9 +3,9 @@ const router = express.Router();
 const db = require("../models");
 
 router.get("/", (req, res) => {
-  db.Resource.find({}).then((foundResources) => {
+  db.Resource.find({}).populate("users", "userName").then((foundResources) => {
     res.json(foundResources);
-  });
+  }).catch
 });
 
 router.get("/:id", (req, res) => {

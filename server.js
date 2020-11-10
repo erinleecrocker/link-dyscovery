@@ -8,6 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Bringing in Controllers:
+const AuthController = require("./controllers/authController")
 const UserController = require("./controllers/userController");
 const ResourceController = require("./controllers/resourceController")
 const FeedbackController = require("./controllers/feedbackController");
@@ -46,7 +47,7 @@ app.get("/api/config", (req, res) => {
     });
   });
 
-
+app.use(AuthController)
   app.use("/api/user", UserController);
   app.use("/api/resource", ResourceController);
   app.use("/api/feedback", FeedbackController);

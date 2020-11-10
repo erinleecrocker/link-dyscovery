@@ -7,6 +7,7 @@ const FeedbackSchema = new Schema({
   },
   userCreatedOn: {
     type: Date,
+    default: Date.now
   },
   createdBy: {
     type: Schema.Types.ObjectId,

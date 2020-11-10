@@ -22,7 +22,7 @@ function App() {
       <BrowserRouter>
         <div className="App">
           <Navbar />
-
+   
           <Route exact path="/" component={Home} />
           <Route exact path="/link-dyscovery" component={Home} />
           <Route exact path="/create-account" component={CreateAccount} />
@@ -31,7 +31,7 @@ function App() {
           <Route exact path="/user-resources" component={UserResources} />
           <Route exact path="/ResourceCategory" component={ResourceCategory} />
           <Route exact path="/verified-resources" component={VerifiedResources} />
-        
+
         </div>
       </BrowserRouter>
     </>

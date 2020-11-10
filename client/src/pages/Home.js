@@ -1,4 +1,11 @@
 import React from "react";
+<<<<<<< HEAD
+import HomePageContainer from "../components/HomePageContainer/HomePageContainer";
+
+const Home = () => {
+  return (
+      <HomePageContainer/>
+=======
 import MainLogo from "../images/443x100.png";
 import '../components/HomePageContainer/HomePageContainer.css';
 import Navbar from "../components/Navbar/Navbar";
@@ -55,6 +62,7 @@ const Home = () => {
       
       <Footer/>
     </div>
+>>>>>>> 762da0a7d96394125a3ad4faf5dcc4d7f7367b10
   );
 };
 

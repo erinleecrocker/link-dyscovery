@@ -18,9 +18,9 @@ export default function Login() {
   
     return (
         <>
-        <div className="Login">
+         <div className="Login">
         <LoginCard>
-      
+       
         <form onSubmit={handleSubmit}>
           <FormGroup controlId="email" bsSize="large">
             <FormLabel>E-mail: </FormLabel>
@@ -47,7 +47,7 @@ export default function Login() {
           </SubmitButton>
           </div>
         </form>
-      
+        
       </LoginCard>
       </div>
       </>

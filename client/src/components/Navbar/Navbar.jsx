@@ -7,7 +7,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-md navbar-custom">
+    <nav className="navbar fixed-top navbar-expand-md navbar-custom">
       <img src={Logo} alt="Link Dyscovery" />
       <button
         className="navbar-light navbar-toggler"

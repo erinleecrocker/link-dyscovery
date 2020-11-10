@@ -4,14 +4,13 @@ import "./Login.css";
 //Container for the table
 function LoginCard(props) {
   return (
-    <div className="container login-container">
+    <div className="container login-card">
       <div className="card">
-        {/* <div className="card-body"> */}
-          {/* <h2 className="card-title">Login</h2> */}
+        <div className="card-body">
           <div className="card-text">{props.children}</div>
         </div>
-        </div>
-        // </div>
+      </div>
+    </div>
   );
 }
 

@@ -14,7 +14,7 @@
     
  
 }
-.label-form.col-6{
+.label-form.col-6::after{
     content: ":"; 
 }
 .control-form.col-6{

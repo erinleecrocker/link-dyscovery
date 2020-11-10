@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
-import { FormGroup, FormControl, FormLabel } from "../components/Form/Form";
-import LoginCard from "../components/LoginCard/LoginCard"
-import SubmitButton from "../components/Submit Button/SubmitButton"
+import { FormGroup, FormControl, FormLabel } from "../Form/Form";
+import LoginCard from "../LoginCard/LoginCard"
+import SubmitButton from "../Submit Button/SubmitButton"
 
 const SignupForm = ({ buttonText, handleSubmit, slug }) => {
   const [emailAddress, setEmailAddress] = useState("");

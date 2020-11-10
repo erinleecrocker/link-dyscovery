@@ -4,7 +4,7 @@ import "./Login.css";
 //Container for the table
 function LoginCard(props) {
   return (
-    <div className="container">
+    <div className="container login-card">
       <div className="card">
         <div className="card-body">
           <div className="card-text">{props.children}</div>

@@ -21,7 +21,16 @@ router.post("/api/signup", (req, res) => {
           password: hashedPassword,
         })
           .then((newUser) => {
-            res.json(newUser);
+            const token = jwt.sign(
+              { _id: newUser._id, emailAddress: newUser.emailAddress },
+              process.env.SECRET
+            );
+            res.json({
+              error: false,
+              data: token,
+              message:
+                "Email and Password accepted. Account successfully created.",
+            });
           })
           .catch((err) => {
             console.log(err);
@@ -51,9 +60,8 @@ router.post("/api/login", (req, res) => {
           if (result) {
             const token = jwt.sign(
               { _id: foundUser._id, emailAddress: foundUser.emailAddress },
-              "LinkDyscovery"
+              process.env.SECRET
             );
-
             res.json({
               error: false,
               data: token,

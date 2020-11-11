@@ -10,14 +10,14 @@ const VerifiedResources = () => {
     <div>
       <>
         <ResourceBox>
-            <ResourcePageTitle/>
-            <ResourceSearchBar/>
-            <ResourceResultDisplay>
-              {/* Resource Card will take in props for Title, Web Address, Description, and Review, along with a submit review button */}
-                <ResourceCard/>
-            </ResourceResultDisplay>
+          <ResourcePageTitle />
+          {/* Resource Search Bar contains a search bar and a category filter button */}
+          <ResourceSearchBar />
+          <ResourceResultDisplay>
+            {/* Resource Card will take in props for Title, Web Address, Description, and Review, along with a submit review button */}
+            <ResourceCard name="" url="" description="" />
+          </ResourceResultDisplay>
         </ResourceBox>
- 
       </>
     </div>
   );

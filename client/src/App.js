@@ -13,17 +13,15 @@ import VerifiedResources from "./pages/VerifiedResources";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 // CSS Imports
-import './App.css';
+import "./App.css";
 // import HomePageContainer from './components/HomePageContainer/HomePageContainer';
-
 
 function App() {
   return (
     <>
       <BrowserRouter>
-      
         <div className="App">
-        <Navbar />
+          <Navbar />
 
           <Route exact path="/" component={Home} />
           <Route exact path="/link-dyscovery" component={Home} />
@@ -33,14 +31,11 @@ function App() {
           <Route exact path="/user-resources" component={UserResources} />
           <Route exact path="/resource-category" component={ResourceCategory} />
           <Route exact path="/verified-resources" component={VerifiedResources} />
-        <Footer />
+
+          <Footer />
         </div>
       </BrowserRouter>
     </>
-    // <div className="App">
-    //   {/* <HomePageContainer/> */}
-    //   <Login></Login>
-    // </div>
   );
 }
 

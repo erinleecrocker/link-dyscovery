@@ -1,10 +1,14 @@
 import React from 'react';
+import ProfileBody from "../components/ProfileBody/ProfileBody"
+import LoginCard from "../components/LoginCard/LoginCard"
 
 const Profile = () => {
     return (
-        <div>
-            <h1>Profile Page</h1>
-        </div>
+        <>
+            
+            <ProfileBody />
+            
+        </>
     );
 };
 

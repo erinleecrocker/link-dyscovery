@@ -11,6 +11,10 @@ const SignupForm = ({ buttonText, handleSubmit, slug, cardText }) => {
   // useLayoutEffect(() => {
   //   firstInputRef.current.focus();
   // }, []);
+    const validateForm = () => {
+    return emailAddress.length > 3 && password.length > 5;
+    
+  };
 
   return (
       <LoginCard>
@@ -19,6 +23,7 @@ const SignupForm = ({ buttonText, handleSubmit, slug, cardText }) => {
     <form
       onSubmit={(e) => {
         handleSubmit(e, emailAddress, password);
+   
       }}
     >
       <FormGroup>
@@ -47,7 +52,7 @@ const SignupForm = ({ buttonText, handleSubmit, slug, cardText }) => {
       </FormGroup>
       </div>
       <div className="col text-center">
-        <SubmitButton type="submit" className="btn btn-primary">
+        <SubmitButton disabled={!validateForm()} type="submit" className="btn btn-primary">
           {buttonText}
         </SubmitButton>
       </div>

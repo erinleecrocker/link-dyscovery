@@ -3,11 +3,11 @@ import AuthContext from "../context/AuthContext";
 import axios from "axios";
 import SignupForm from "../components/SignupForm/SignupForm";
 import { useHistory } from "react-router-dom";
-import Navbar from '../components/Navbar/Navbar';
 
 const SignUp = () => {
   const { setJwt } = useContext(AuthContext);
   const history = useHistory();
+
 
   const handleSubmit = (e, emailAddress, password) => {
     e.preventDefault();
@@ -16,7 +16,7 @@ const SignUp = () => {
       .then((response) => {
         console.log(response.data);
         setJwt(response.data.data);
-        history.push("/books");
+        history.push("/profile");
       })
       .catch((err) => {
         console.log(err);
@@ -25,7 +25,6 @@ const SignUp = () => {
 
   return (
     <>
-      <Navbar />
       <SignupForm
         handleSubmit={handleSubmit}
         buttonText="Create Account"

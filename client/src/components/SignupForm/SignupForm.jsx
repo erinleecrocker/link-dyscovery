@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
+
 import { FormGroup, FormControl, FormLabel } from "../Form/Form";
 import LoginCard from "../LoginCard/LoginCard"
 import SubmitButton from "../Submit Button/SubmitButton"
@@ -11,6 +12,7 @@ const SignupForm = ({ buttonText, handleSubmit, slug }) => {
   // useEffect(() => {
   //   firstInputRef.current.focus();
   // }, []);
+
 
   return (
       <LoginCard>
@@ -47,7 +49,7 @@ const SignupForm = ({ buttonText, handleSubmit, slug }) => {
       </FormGroup>
       </div>
       <div className="col text-center">
-        <SubmitButton type="submit" className="btn btn-primary">
+        <SubmitButton onClick={handleSubmit} type="submit" className="btn btn-primary">
           {buttonText}
         </SubmitButton>
       </div>

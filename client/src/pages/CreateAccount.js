@@ -3,6 +3,7 @@ import AuthContext from "../context/AuthContext";
 import axios from "axios";
 import SignupForm from "../components/SignupForm/SignupForm";
 import { useHistory } from "react-router-dom";
+import Navbar from '../components/Navbar/Navbar';
 
 const SignUp = () => {
   const { setJwt } = useContext(AuthContext);
@@ -26,6 +27,7 @@ const SignUp = () => {
 
   return (
     <>
+    <Navbar/>
       <SignupForm
         handleSubmit={handleSubmit}
         buttonText="Create Account"

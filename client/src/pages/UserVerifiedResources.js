@@ -4,13 +4,12 @@ import ResourceSearchBar from "../components/ResourceSearchBar/ResourceSearchBar
 import ResourcePageTitle from "../components/ResourcePageTitle/ResourcePageTitle";
 import ResourceCard from "../components/ResourceCard/ResourceCard";
 import ResourceResultDisplay from "../components/ResourceResultDisplay/ResourceResultDisplay";
-import Navbar from '../components/Navbar/Navbar';
+import NavbarUser from "../components/Navbar/NavbarUser";
 
-const VerifiedResources = () => {
+const UserVerifiedResources = () => {
   return (
- 
       <>
-      <Navbar/>
+      <NavbarUser />
         <ResourceBox>
             <ResourcePageTitle/>
             <ResourceSearchBar/>
@@ -25,4 +24,4 @@ const VerifiedResources = () => {
   );
 };
 
-export default VerifiedResources;
+export default UserVerifiedResources;

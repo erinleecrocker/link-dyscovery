@@ -1,14 +1,14 @@
 import React from "react";
 import HomePageContainer from "../components/HomePageContainer/HomePageContainer";
-import Navbar from '../components/Navbar/Navbar';
+import NavbarUser from "../components/Navbar/NavbarUser";
 
-const Home = () => {
+const UserHome = () => {
   return (
     <>
-       <Navbar/>
+      <NavbarUser />
       <HomePageContainer />
     </>
   );
 };
 
-export default Home;
+export default UserHome;

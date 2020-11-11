@@ -48,7 +48,7 @@ const SignupForm = ({ buttonText, handleSubmit, slug }) => {
       </FormGroup>
       </div>
       <div className="col text-center">
-        <SubmitButton onClick={handleSubmit} type="submit" className="btn btn-primary">
+        <SubmitButton type="submit" className="btn btn-primary">
           {buttonText}
         </SubmitButton>
       </div>

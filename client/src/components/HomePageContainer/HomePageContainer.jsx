@@ -25,14 +25,17 @@ const HomePageContainer = () => {
             <div className="row justify-content-md-center">
               <HomeButton 
                 title="View Resources"
+                link="/resource-category"
                
               />
               <HomeButton
                 title="Login"
+                link="/login"
               
               />
               <HomeButton 
                 title="Create an Account"
+                link="/create-account"
                 
               />
             </div>

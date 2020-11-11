@@ -20,9 +20,10 @@ const LogIn = () => {
       .then((response) => {
         console.log(response.data);
         setJwt(response.data.data);
-        history.push("/");
+        history.push("/profile");
       })
       .catch((err) => {
+        alert("Invalid email or password");
         console.log(err);
       });
   };

@@ -19,6 +19,7 @@ const SignUp = () => {
         history.push("/profile");
       })
       .catch((err) => {
+        alert("This email is already in use. Please login or use a different email.")
         console.log(err);
       });
   };

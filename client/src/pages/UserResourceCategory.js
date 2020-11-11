@@ -13,27 +13,27 @@ const UserResourceCategory = () => {
             <div className="d-flex">
             <div class="col">
                 <div class="row mb-4">
-                    <CategoryButton title="All Resource" link="/verified-resources"/>
+                    <CategoryButton title="All Resource" link="/verified-resources-user"/>
                 </div>
                 <div className="row">
-                    <CategoryButton title="ADHD" link="/verified-resources"/>
+                    <CategoryButton title="ADHD" link="/verified-resources-user"/>
                 </div>
             </div>
             <div class="col">
                 <div class="row mb-4">
-                <CategoryButton title="Dyslexia" link="/verified-resources"/>
+                <CategoryButton title="Dyslexia" link="/verified-resources-user"/>
                 </div>
                 <div class="row">
-                    <CategoryButton title="Dyscalculia" link="/verified-resources"/>
+                    <CategoryButton title="Dyscalculia" link="/verified-resources-user"/>
                 </div>
                 
             </div>
             <div class="col">
                 <div class="row mb-4">
-                    <CategoryButton title="Dysgraphia" link="/verified-resources"/>
+                    <CategoryButton title="Dysgraphia" link="/verified-resources-user"/>
                 </div>
                 <div class="row">
-                    <CategoryButton title="Processing Deficits" link="/verified-resources"/>
+                    <CategoryButton title="Processing Deficits" link="/verified-resources-user"/>
                 </div>
             </div>
             </div>

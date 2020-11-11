@@ -2,7 +2,7 @@ import React from "react";
 import CategoryButton from "../CategoryButton/CategoryButton";
 import "./ResourceSearchBar.css";
 
-const ResourceSearchBar = () => {
+const ResourceSearchBar = ({ categoryLink }) => {
   return (
     <div>
       <div className="row center-content">
@@ -30,7 +30,7 @@ const ResourceSearchBar = () => {
             </div>
             <div className="col align-self-center">
               <CategoryButton
-                link="/resource-category"
+                link={categoryLink}
                 title="Choose a new Category"
               />
             </div>

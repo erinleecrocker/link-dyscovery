@@ -10,15 +10,16 @@ const UserVerifiedResources = () => {
   return (
       <>
       <NavbarUser />
-        <ResourceBox>
-            <ResourcePageTitle/>
-            <ResourceSearchBar/>
-            <ResourceResultDisplay>
-              {/* Resource Card will take in props for Title, Web Address, Description, and Review, along with a submit review button */}
-                <ResourceCard/>
-            </ResourceResultDisplay>
+      <ResourceBox>
+          <ResourcePageTitle />
+          {/* Resource Search Bar contains a search bar and a category filter button */}
+          <ResourceSearchBar 
+          categoryLink="/user-resource-category"/>
+          <ResourceResultDisplay>
+            {/* Resource Card will take in props for Title, Web Address, Description, and Review, along with a submit review button */}
+            <ResourceCard name="" url="" description="" />
+          </ResourceResultDisplay>
         </ResourceBox>
- 
       </>
 
   );

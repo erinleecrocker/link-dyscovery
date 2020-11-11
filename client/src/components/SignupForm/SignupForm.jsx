@@ -12,6 +12,7 @@ const SignupForm = ({ buttonText, handleSubmit, slug, cardText }) => {
   //   firstInputRef.current.focus();
   // }, []);
 
+
   return (
       <LoginCard>
         <h2 className="card-title">{cardText}</h2>

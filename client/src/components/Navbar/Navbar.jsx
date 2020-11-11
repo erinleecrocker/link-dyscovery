@@ -8,7 +8,10 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <nav className="navbar fixed-top navbar-expand-md navbar-custom">
-      <img src={Logo} alt="Link Dyscovery" />
+      <Link to="/home" className="nav-bar-link">
+        <img src={Logo} alt="Link Dyscovery" />
+      </Link>
+
       <button
         className="navbar-light navbar-toggler"
         type="button"
@@ -23,10 +26,14 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <Link to="/verified-resources" className="nav-bar-link">Resources</Link>
+            <Link to="/verified-resources" className="nav-bar-link">
+              Resources
+            </Link>
           </li>
           <li className="nav-item">
-            <Link to="/login" className="nav-bar-link">Login</Link>
+            <Link to="/login" className="nav-bar-link">
+              Login
+            </Link>
           </li>
         </ul>
       </div>

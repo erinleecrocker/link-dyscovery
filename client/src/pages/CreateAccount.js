@@ -30,6 +30,7 @@ const SignUp = () => {
         handleSubmit={handleSubmit}
         buttonText="Create Account"
         slug="signup"
+        // disabled={!validateForm()}
       />
     </>
   );

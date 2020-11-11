@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import { FormGroup, FormControl, FormLabel } from "../Form/Form";
 import LoginCard from "../LoginCard/LoginCard"
 import SubmitButton from "../Submit Button/SubmitButton"
@@ -8,13 +8,13 @@ const SignupForm = ({ buttonText, handleSubmit, slug }) => {
   const [password, setPassword] = useState("");
   const firstInputRef = useRef();
 
-  // useEffect(() => {
+  // useLayoutEffect(() => {
   //   firstInputRef.current.focus();
   // }, []);
 
   return (
       <LoginCard>
-        <h2 className="card-title">Create Account</h2>
+        <h2 className="card-title"></h2>
           <div>
     <form
       onSubmit={(e) => {

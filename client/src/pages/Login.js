@@ -29,7 +29,6 @@ const LogIn = () => {
   };
   return (
     <>
-      <Navbar />
       <SignupForm
         cardText="Login"
         handleSubmit={handleSubmit}

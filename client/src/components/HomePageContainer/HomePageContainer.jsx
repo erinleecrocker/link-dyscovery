@@ -1,18 +1,16 @@
 import React from "react";
-import MainLogo from "../../images/443x100.png";
 import HomeButton from "../HomeButton/HomeButton";
 import './HomePageContainer.css';
+import SiteTitle from "../SiteTitle/SiteTitle";
 
 const HomePageContainer = () => {
   return (
     <div className="container">
-        <div className="row home-row align-items-center">
-          <img id="main-img" src={MainLogo} />
-          <p>Communicating Differently Together</p>
-        </div>
-
-        <div className="card" id="home-container">
-          <div className="card-body">
+      <div className="row ml-4">
+      <SiteTitle/>
+      </div>
+        < div className="card" id="home-container">
+          <div className="card-body ">
             <p className="card-text home-card-text">
               Welcome to Link Dyscovery! This application is a place for adults
               living with learning disabilities to find, rate, and share
@@ -26,7 +24,7 @@ const HomePageContainer = () => {
             </p>
             <div className="row justify-content-md-center">
               <HomeButton 
-                title="Login"
+                title="View Resources"
                
               />
               <HomeButton

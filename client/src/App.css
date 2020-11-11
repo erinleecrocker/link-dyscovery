@@ -6,9 +6,13 @@ body {
   background-size: cover;
 }
 .container{
-  margin-top:100px;
+  margin-top:130px;
 }
 
 p {
+  font-family: Courier;
+}
+
+h2 {
   font-family: Courier;
 }

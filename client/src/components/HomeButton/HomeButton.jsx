@@ -1,10 +1,10 @@
 import React from 'react';
 import './HomeButton.css';
 
-const LargeButton = (props) => {
+const HomeButton = (props) => {
     return (
         <div>
-            <div class="col-md-auto">
+            <div className="col-md-auto">
                 <a href={props.link} className="btn btn-primary btn-lg ml-3" id="home-button">
                     <p id="home-button-text">{props.title}</p>
                 </a>
@@ -13,4 +13,4 @@ const LargeButton = (props) => {
     );
 };
 
-export default LargeButton;
+export default HomeButton;

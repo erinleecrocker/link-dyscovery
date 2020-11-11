@@ -25,12 +25,14 @@ function App() {
 
           <Route exact path="/" component={Home} />
           <Route exact path="/link-dyscovery" component={Home} />
+          <Route exact path="/home" component={Home} />
           <Route exact path="/create-account" component={CreateAccount} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/user-resources" component={UserResources} />
           <Route exact path="/resource-category" component={ResourceCategory} />
           <Route exact path="/verified-resources" component={VerifiedResources} />
+          {/* <Route path="*" component={Home} /> */}
 
           <Footer />
         </div>

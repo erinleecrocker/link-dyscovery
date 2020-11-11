@@ -10,14 +10,13 @@ const ResourceCard = (props) => {
           <div className="col-sm-9">
             <div className="row">
               {/* Where the Title will go  */}
-              <h5>{props.name}RESOURCE NAME</h5>
+              <h5>{props.title}</h5>
             </div>
             <div className="row">
               {/* Where the Web Address and Description will go */}
               <p> Web Address: {props.url} </p>
               <p>
-                {" "}
-                Description: {props.description}{" "}
+                Description: {props.description}
               </p>
             </div>
           </div>

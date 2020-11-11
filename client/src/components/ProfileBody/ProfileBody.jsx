@@ -1,9 +1,17 @@
-import React from "react";
+import React, {useEffect} from "react";
+import ProfileModal from "../ProfileModal/ProfileModal"
+
 import ProfilePlaceholder from "../../images/profilePlaceholder.png";
 
 import "./ProfileBody.css";
 
 const ProfileBody = () => {
+
+  // const handleEditModal = () => {
+  //   <ProfileModal />
+  // }
+
+
   return (
     <div className="container defaultStyle">
       <div className="row">
@@ -20,6 +28,7 @@ const ProfileBody = () => {
               <h6> Gender: </h6>
               <h6> Location: </h6>
               <h6> LDs: </h6>
+              <button className="btn btn-outline-dark">Edit Profile</button>
             </div>
             <div className="col-md-5">
               <h6>About Me:</h6>

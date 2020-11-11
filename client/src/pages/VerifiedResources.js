@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ResourceBox from "../components/ResourceBox/ResourceBox";
 import ResourceSearchBar from "../components/ResourceSearchBar/ResourceSearchBar";
 import ResourcePageTitle from "../components/ResourcePageTitle/ResourcePageTitle";
@@ -6,19 +6,39 @@ import ResourceCard from "../components/ResourceCard/ResourceCard";
 import ResourceResultDisplay from "../components/ResourceResultDisplay/ResourceResultDisplay";
 import Navbar from '../components/Navbar/Navbar';
 
+import API from "../utils/API";
+
 const VerifiedResources = () => {
+  const [allResources, setAllResources] = useState([]);
+
+  useEffect(() => {
+    loadResources();
+  }, []);
+
+  const loadResources = () => {
+    API.getResources().then((res) => {
+      setAllResources(res.data);
+    });
+  };
+
   return (
  
       <>
       <Navbar/>
         <ResourceBox>
           <ResourcePageTitle />
-          {/* Resource Search Bar contains a search bar and a category filter button */}
-          <ResourceSearchBar
+          <ResourceSearchBar 
           categoryLink="/resource-category" />
           <ResourceResultDisplay>
-            {/* Resource Card will take in props for Title, Web Address, Description, and Review, along with a submit review button */}
-            <ResourceCard name="" url="" description="" />
+            {allResources.map((resource) => {
+              return <ResourceCard 
+              key={resource._id}
+              title={resource.title}
+              url={resource.url}
+              description={resource.description}
+
+              />;
+              })}
           </ResourceResultDisplay>
         </ResourceBox>
       </>

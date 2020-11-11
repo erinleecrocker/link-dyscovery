@@ -20,5 +20,25 @@ export default {
   // Saves a user to the database
   saveUser: function(userData) {
     return axios.post("/api/user", userData);
+  },
+  // Gets all users
+  getResources: function() {
+    return axios.get("/api/resource");
+  },
+  // Gets the user with the given id
+  getResource: function(id) {
+    return axios.get("/api/resource/" + id);
+  },
+  // Deletes the user with the given id
+  deleteResource: function(id) {
+    return axios.delete("/api/resource/" + id);
+  },
+// Edit the user with the given id
+  editResource: function(id) {
+      return axios.put("/api/resource/" + id)
+  },
+  // Saves a user to the database
+  saveResource: function(userData) {
+    return axios.post("/api/resource", userData);
   }
 };

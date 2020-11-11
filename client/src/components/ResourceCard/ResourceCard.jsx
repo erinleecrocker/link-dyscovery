@@ -2,7 +2,7 @@ import React from "react";
 import "./ResourceCard.css";
 import SubmitButton from '../Submit Button/SubmitButton';
 
-const ResourceCard = () => {
+const ResourceCard = (props) => {
   return (
     <div>
         <div className="card" id="resource-card">
@@ -10,15 +10,13 @@ const ResourceCard = () => {
           <div className="col-sm-9">
             <div className="row">
               {/* Where the Title will go  */}
-              <h5>American Association of Learning Disabilities</h5>
+              <h5>{props.title}</h5>
             </div>
             <div className="row">
               {/* Where the Web Address and Description will go */}
-              <p> Web Address: www.americanassociationforLD.com </p>
+              <p> Web Address: {props.url} </p>
               <p>
-                {" "}
-                Description: This site offers books articles for coping
-                techniques concerning multiple{" "}
+                Description: {props.description}
               </p>
             </div>
           </div>

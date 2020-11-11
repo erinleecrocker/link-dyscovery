@@ -4,22 +4,22 @@ const db = require("../models");
 const jwt = require("jsonwebtoken");
 
 router.get("/", (req, res) => {
-  if (!req.headers.authorization) {
-    return res.status(401).json({
-      error: true,
-      data: null,
-      message: "Not Authorized",
-    });
-  }
-  jwt.verify(req.headers.authorization, process.env.SECRET, (err, decoded) => {
-    if (err) {
-      return res.status(401).json({
-        error: true,
-        data: null,
-        message: "Invalid token.",
-      });
-    } else {
-      console.log(decoded);
+  // if (!req.headers.authorization) {
+  //   return res.status(401).json({
+  //     error: true,
+  //     data: null,
+  //     message: "Not Authorized",
+  //   });
+  // }
+  // jwt.verify(req.headers.authorization, process.env.SECRET, (err, decoded) => {
+  //   if (err) {
+  //     return res.status(401).json({
+  //       error: true,
+  //       data: null,
+  //       message: "Invalid token.",
+  //     });
+  //   } else {
+  //     console.log(decoded);
 
       db.Resource.find({})
         .populate("users", "userName")
@@ -34,9 +34,9 @@ router.get("/", (req, res) => {
             message: "Failed to retrieve all resources.",
           });
         });
-    }
+    // }
   });
-});
+// });
 
 router.get("/:id", (req, res) => {
   db.Resource.findById({ _id: req.params.id }).then((foundResource) => {

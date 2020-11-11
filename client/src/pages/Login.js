@@ -8,9 +8,9 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const validateForm = () => {
-    return email.length > 0 && password.length > 0;
-  };
+  // const validateForm = () => {
+  //   return email.length > 0 && password.length > 0;
+  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -41,7 +41,7 @@ export default function Login() {
             </FormGroup>
           </div>
           <div>
-            <SubmitButton disabled={!validateForm()} type="submit">
+            <SubmitButton type="submit">
               Login
             </SubmitButton>
           </div>
@@ -50,3 +50,5 @@ export default function Login() {
     </>
   );
 }
+
+// taken from submit button: disabled={!validateForm()}

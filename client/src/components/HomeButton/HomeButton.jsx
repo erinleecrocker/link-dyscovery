@@ -1,7 +1,7 @@
 import React from 'react';
 import './HomeButton.css';
 
-const LargeButton = (props) => {
+const HomeButton = (props) => {
     return (
         <div>
             <div className="col-md-auto">
@@ -13,4 +13,4 @@ const LargeButton = (props) => {
     );
 };
 
-export default LargeButton;
+export default HomeButton;

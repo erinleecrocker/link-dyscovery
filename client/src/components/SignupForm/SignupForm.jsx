@@ -3,7 +3,7 @@ import { FormGroup, FormControl, FormLabel } from "../Form/Form";
 import LoginCard from "../LoginCard/LoginCard"
 import SubmitButton from "../Submit Button/SubmitButton"
 
-const SignupForm = ({ buttonText, handleSubmit, slug }) => {
+const SignupForm = ({ buttonText, handleSubmit, slug, cardText }) => {
   const [emailAddress, setEmailAddress] = useState("");
   const [password, setPassword] = useState("");
   const firstInputRef = useRef();
@@ -15,7 +15,7 @@ const SignupForm = ({ buttonText, handleSubmit, slug }) => {
 
   return (
       <LoginCard>
-        <h2 className="card-title"></h2>
+        <h2 className="card-title">{cardText}</h2>
           <div>
     <form
       onSubmit={(e) => {

@@ -20,7 +20,7 @@ const LogIn = () => {
       .then((response) => {
         console.log(response.data);
         setJwt(response.data.data);
-        history.push("/books");
+        history.push("/");
       })
       .catch((err) => {
         console.log(err);
@@ -29,7 +29,7 @@ const LogIn = () => {
   return (
     <>
       <SignupForm
-        
+        cardText="Login"
         handleSubmit={handleSubmit}
         buttonText="Login"
         slug="login"

@@ -14,7 +14,7 @@ const SignupForm = ({ buttonText, handleSubmit, slug }) => {
 
   return (
       <LoginCard>
-        <h2 className="card-title">Create Account</h2>
+        <h2 className="card-title"></h2>
           <div>
     <form
       onSubmit={(e) => {

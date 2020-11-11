@@ -1,52 +1,80 @@
-import React, { useState } from "react";
-import { FormGroup, FormControl, FormLabel } from "../components/Form/Form";
-import LoginCard from "../components/LoginCard/LoginCard";
-import SubmitButton from "../components/Submit Button/SubmitButton";
-import "../components/LoginCard/Login.css";
+import React, { useContext } from "react";
+import AuthContext from "../context/AuthContext";
+import axios from "axios";
+import SignupForm from "../components/SignupForm/SignupForm";
+import { useHistory } from "react-router-dom";
+import Navbar from '../components/Navbar/Navbar';
 
-export default function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+const LogIn = () => {
+  const { setJwt } = useContext(AuthContext);
+  const history = useHistory();
 
-  const validateForm = () => {
-    return email.length > 0 && password.length > 0;
-  };
+  // const validateForm = () => {
+  //   return emailAddress.length > 0 && password.length > 0;
+  // };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e, emailAddress, password) => {
     e.preventDefault();
+    axios
+      .post("/api/login", { emailAddress, password })
+      .then((response) => {
+        console.log(response.data);
+        setJwt(response.data.data);
+        history.push("/books");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
-
   return (
     <>
-      <LoginCard>
-        <h2 className="card-title">Login</h2>
-        <form onSubmit={handleSubmit}>
-          <FormGroup controlId="email" bsSize="large">
-            <FormLabel>E-mail: </FormLabel>
-            <FormControl
-              autoFocus
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </FormGroup>
-          <div>
-            <FormGroup controlId="password" bsSize="large">
-              <FormLabel>Password: </FormLabel>
-              <FormControl
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                type="password"
-              />
-            </FormGroup>
-          </div>
-          <div>
-            <SubmitButton disabled={!validateForm()} type="submit">
-              Login
-            </SubmitButton>
-          </div>
-        </form>
-      </LoginCard>
+      <Navbar />
+      <SignupForm
+        
+        handleSubmit={handleSubmit}
+        buttonText="Login"
+        slug="login"
+        // disabled={!validateForm()}
+      />
     </>
   );
-}
+};
+
+export default LogIn;
+  
+  
+
+//   return (
+//     <>
+//       <LoginCard>
+//         <h2 className="card-title">Login</h2>
+//         <form onSubmit={handleSubmit}>
+//           <FormGroup controlId="email" bsSize="large">
+//             <FormLabel>E-mail </FormLabel>
+//             <FormControl
+//               autoFocus
+//               type="email"
+//               value={email}
+//               onChange={(e) => setEmail(e.target.value)}
+//             />
+//           </FormGroup>
+//           <div>
+//             <FormGroup controlId="password" bsSize="large">
+//               <FormLabel>Password </FormLabel>
+//               <FormControl
+//                 value={password}
+//                 onChange={(e) => setPassword(e.target.value)}
+//                 type="password"
+//               />
+//             </FormGroup>
+//           </div>
+//           <div>
+//             <SubmitButton disabled={!validateForm()} type="submit">
+//               Login
+//             </SubmitButton>
+//           </div>
+//         </form>
+//       </LoginCard>
+//     </>
+//   );
+// }

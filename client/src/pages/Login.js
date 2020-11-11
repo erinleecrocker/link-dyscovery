@@ -20,7 +20,7 @@ const LogIn = () => {
       .then((response) => {
         console.log(response.data);
         setJwt(response.data.data);
-        history.push("/profile");
+        history.push("/user-resource-category");
       })
       .catch((err) => {
         alert("Invalid email or password");
@@ -29,6 +29,7 @@ const LogIn = () => {
   };
   return (
     <>
+    <Navbar/>
       <SignupForm
         cardText="Login"
         handleSubmit={handleSubmit}

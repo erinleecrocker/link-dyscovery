@@ -23,7 +23,7 @@ const ResourceCard = (props) => {
           <div className="col-sm-3 ">
             <div className="row">
                 {/* This is where the rating will go */}
-                <p>THIS IS WHERE STARS GO</p>
+                <p>{props.rating}RATING</p>
             </div>
             <div className="row">
               {/* This is where the Button to submit review will go */}

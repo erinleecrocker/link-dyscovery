@@ -1,6 +1,6 @@
 import React from "react";
 import CategoryButton from "../CategoryButton/CategoryButton";
-import './ResourceSearchBar.css';
+import "./ResourceSearchBar.css";
 
 const ResourceSearchBar = () => {
   return (
@@ -29,9 +29,10 @@ const ResourceSearchBar = () => {
               </form>
             </div>
             <div className="col align-self-center">
-                <CategoryButton
-                    title="Choose a new Category"
-                />
+              <CategoryButton
+                link="/resource-category"
+                title="Choose a new Category"
+              />
             </div>
           </div>
         </div>

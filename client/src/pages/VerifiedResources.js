@@ -14,7 +14,8 @@ const VerifiedResources = () => {
         <ResourceBox>
           <ResourcePageTitle />
           {/* Resource Search Bar contains a search bar and a category filter button */}
-          <ResourceSearchBar />
+          <ResourceSearchBar
+          categoryLink="/resource-category" />
           <ResourceResultDisplay>
             {/* Resource Card will take in props for Title, Web Address, Description, and Review, along with a submit review button */}
             <ResourceCard name="" url="" description="" />

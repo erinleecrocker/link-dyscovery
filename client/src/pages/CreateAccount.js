@@ -16,7 +16,7 @@ const SignUp = () => {
       .then((response) => {
         console.log(response.data);
         setJwt(response.data.data);
-        history.push("/books");
+        history.push("/");
       })
       .catch((err) => {
         console.log(err);
@@ -30,6 +30,7 @@ const SignUp = () => {
         handleSubmit={handleSubmit}
         buttonText="Create Account"
         slug="signup"
+        cardText="Create Account"
         // disabled={!validateForm()}
       />
     </>

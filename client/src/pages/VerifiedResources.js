@@ -4,11 +4,13 @@ import ResourceSearchBar from "../components/ResourceSearchBar/ResourceSearchBar
 import ResourcePageTitle from "../components/ResourcePageTitle/ResourcePageTitle";
 import ResourceCard from "../components/ResourceCard/ResourceCard";
 import ResourceResultDisplay from "../components/ResourceResultDisplay/ResourceResultDisplay";
+import Navbar from '../components/Navbar/Navbar';
 
 const VerifiedResources = () => {
   return (
-    <div>
+ 
       <>
+      <Navbar/>
         <ResourceBox>
           <ResourcePageTitle />
           {/* Resource Search Bar contains a search bar and a category filter button */}
@@ -19,7 +21,7 @@ const VerifiedResources = () => {
           </ResourceResultDisplay>
         </ResourceBox>
       </>
-    </div>
+
   );
 };
 

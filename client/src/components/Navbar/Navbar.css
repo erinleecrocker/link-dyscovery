@@ -4,6 +4,7 @@
     position: fixed;
     height: 75px;
     box-shadow: 0px 0px 3px;
+    font-family: Courier;
 }
 /* heading for navbar */
 img {

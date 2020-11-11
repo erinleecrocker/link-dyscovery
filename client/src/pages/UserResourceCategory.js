@@ -2,12 +2,12 @@ import React from "react";
 import ResourceBox from "../components/ResourceBox/ResourceBox";
 import CategoryButton from "../components/CategoryButton/CategoryButton";
 import ResourceResultDisplay from "../components/ResourceResultDisplay/ResourceResultDisplay";
-import Navbar from '../components/Navbar/Navbar';
+import NavbarUser from "../components/Navbar/NavbarUser";
 
-const ResourceCategory = () => {
+const UserResourceCategory = () => {
   return (
     <div>
-        <Navbar/>
+       <NavbarUser />
       <ResourceBox>
         <ResourceResultDisplay>
             <div className="d-flex">
@@ -43,4 +43,4 @@ const ResourceCategory = () => {
   );
 };
 
-export default ResourceCategory;
+export default UserResourceCategory;

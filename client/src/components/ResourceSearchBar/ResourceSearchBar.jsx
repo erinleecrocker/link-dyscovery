@@ -9,7 +9,7 @@ const ResourceSearchBar = ({ categoryLink, categoryTitle }) => {
         <div className="card" id="resource-box">
           <div className="row">
             <div className="col align-self-center">
-  <p id="category-label">{categoryTitle}</p>
+  <p id="category-label-1">{categoryTitle}</p>
             </div>
             <div className="col align-self-center flex-grow-1">
               <form className="form-inline">

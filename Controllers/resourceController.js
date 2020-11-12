@@ -46,45 +46,45 @@ router.get("/:id", (req, res) => {
 
 router.post("/", (req, res) => {
   // console.log(req.body);
-  if (!req.headers.authorization) {
-    return res.status(401).json({
-      error: true,
-      data: null,
-      message: "Not Authorized",
-    });
-  }
-  jwt.verify(req.headers.authorization, process.env.SECRET, (err, decoded) => {
-    if (err) {
-      return res.status(401).json({
-        error: true,
-        data: null,
-        message: "Invalid token.",
-      });
-    } else {
-      console.log(decoded);
+  // if (!req.headers.authorization) {
+  //   return res.status(401).json({
+  //     error: true,
+  //     data: null,
+  //     message: "Not Authorized",
+  //   });
+  // }
+  // jwt.verify(req.headers.authorization, process.env.SECRET, (err, decoded) => {
+  //   if (err) {
+  //     return res.status(401).json({
+  //       error: true,
+  //       data: null,
+  //       message: "Invalid token.",
+  //     });
+  //   } else {
+  //     console.log(decoded);
       const newResource = {
         category: req.body.category,
         title: req.body.title,
         url: req.body.url,
        description: req.body.description,
-        createdBy: decoded._id
+        // createdBy: decoded._id
       }
 
       db.Resource.create(newResource)
         .then((newResource) => {
           res.json(newResource);
         })
-        .catch((err) => {
-          console.log(err);
-          res.status(500).json({
-            error: true,
-            data: null,
-            message: "Failed to create a resource.",
-          });
-        });
-    }
+        // .catch((err) => {
+        //   console.log(err);
+        //   res.status(500).json({
+        //     error: true,
+        //     data: null,
+        //     message: "Failed to create a resource.",
+        //   });
+        // });
+    
   });
-});
+
 
 // router.put("/:id", (req, res) => {
 //     db.Resource.update({_id: req.params.id}, req.body).then(updateResource => {
@@ -93,12 +93,40 @@ router.post("/", (req, res) => {
 // });
 
 router.put("/:id", (req, res) => {
-  db.Resource.findByIdAndUpdate({ _id: req.params.id }, req.body, {
+
+  const updatedResource = {
+    category: req.body.category,
+    title: req.body.title,
+    url: req.body.url,
+   description: req.body.description,
+    createdBy: decoded._id
+  }
+  db.Resource.findOneAndUpdate({ _id: req.params.id }, updatedResource, {
     new: true,
   }).then((updateResource) => {
-    res.json(updateResource);
+    if (!updateResource) {
+      res.status(404).json({
+        error: true,
+        data: null,
+        message: "Unable to find that resource.",
+      });
+    } else {
+      res.json({
+        error: false,
+        data: updateResource,
+        message: "Successfully updated resource.",
+      });
+    }
+  })
+  .catch((err) => {
+    res.status(500).json({
+      error: true,
+      data: null,
+      message: "An error occurred updating your resource.",
+    });
   });
-});
+  });
+
 
 router.delete("/:id", (req, res) => {
   db.Resource.findByIdAndDelete(req.params.id).then((deleteResource) => {

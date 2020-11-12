@@ -2,6 +2,7 @@ import React from "react";
 import "./ResourceCard.css";
 import SubmitButton from '../Submit Button/SubmitButton';
 
+
 const ResourceCard = (props) => {
   return (
     <>
@@ -23,6 +24,7 @@ const ResourceCard = (props) => {
           <div className="col-sm-3 ">
             <div className="row">
                 {/* This is where the rating will go */}
+                
                 <p>{props.rating}RATING</p>
             </div>
             <div className="row">

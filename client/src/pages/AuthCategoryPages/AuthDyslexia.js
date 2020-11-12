@@ -38,6 +38,7 @@ const loadJSON = () => {
         <ResourceBox>
           <ResourcePageTitle />
           <ResourceSearchBar 
+           categoryTitle="Dyslexia"
           categoryLink="/auth-resource-category" />
           <ResourceResultDisplay>
             {Dyslexia.map((resource) => {

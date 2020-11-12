@@ -38,6 +38,7 @@ const loadJSON = () => {
         <ResourceBox>
           <ResourcePageTitle />
           <ResourceSearchBar 
+          categoryTitle="Processing Deficits"
           categoryLink="/resource-category" />
           <ResourceResultDisplay>
             Coming soon!

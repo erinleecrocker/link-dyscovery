@@ -134,35 +134,34 @@ router.post("/api/login", (req, res) => {
   const { emailAddress, password } = req.body;
 
   db.User.findOne({ emailAddress: emailAddress }).then((foundUser) => {
-    if (foundUser) {
-      //   console.log(foundUser);
+        console.log(foundUser);
       bcrypt
         .compare(password, foundUser.password)
         .then(function (result) {
-          if (result) {
-            const token = jwt.sign(
-              { _id: foundUser._id, emailAddress: foundUser.emailAddress },
-              "LinkDyscovery"
-            );
+          console.log(result)
+          res.json(result);
+          // if (result) {
+          //   const token = jwt.sign(
+          //     { _id: foundUser._id, emailAddress: foundUser.emailAddress },
+          //     "LinkDyscovery"
+          //   );
 
-            res.json({
-              error: false,
-              data: token,
-              message: "Email and Password correct. You are logged in.",
-            });
-          } else {
-            res.status(401).json({
-              error: true,
-              data: null,
-              message: "Login Failed",
-            });
-          }
+          //   res.json({
+          //     error: false,
+          //     data: token,
+          //     message: "Email and Password correct. You are logged in.",
+          //   });
+          // } else {
+          //   res.status(401).json({
+          //     error: true,
+          //     data: null,
+          //     message: "Login Failed",
+          //   });
+          // }
         })
         .catch((err) => {
           console.log(err);
         });
-    }
-
     // console.log(foundUser);
   });
 });

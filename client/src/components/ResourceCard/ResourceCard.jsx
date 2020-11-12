@@ -4,7 +4,7 @@ import SubmitButton from '../Submit Button/SubmitButton';
 
 const ResourceCard = (props) => {
   return (
-    <div>
+    <>
         <div className="card" id="resource-card">
         <div className="row">
           <div className="col-sm-9">
@@ -32,7 +32,7 @@ const ResourceCard = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

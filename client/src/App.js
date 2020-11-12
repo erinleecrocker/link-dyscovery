@@ -1,5 +1,5 @@
 // React Imports
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 // Page Imports
 import CreateAccount from "./pages/CreateAccount";
@@ -15,11 +15,20 @@ import UserVerifiedResources from "./pages/UserVerifiedResources";
 // Component Imports
 // import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import { setAxiosDefaults } from "./utils/axiosDefaults";
 // CSS Imports
 import "./App.css";
 // import HomePageContainer from './components/HomePageContainer/HomePageContainer';
 
 function App() {
+  const [jwt, setJwt] = useState("");
+
+  useEffect(() => {
+    if (jwt) {
+      setAxiosDefaults(jwt);
+    }
+  },[jwt])
+
   return (
     <>
       <BrowserRouter>
@@ -29,10 +38,10 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/link-dyscovery" component={Home} />
           <Route exact path="/home" component={Home} />
-          <Route exact path="/userhome" component={UserHome} />
+          <Route exact path="/user-home" component={UserHome} />
           <Route exact path="/create-account" component={CreateAccount} />
           <Route exact path="/login" component={Login} />
-          <Route exact path="/profile" component={Profile} />
+          <Route exact path="/profile/:id" component={Profile} />
           <Route exact path="/user-resources" component={UserResources} />
           <Route exact path="/resource-category" component={ResourceCategory} />
           <Route exact path="/user-resource-category" component={UserResourceCategory} />

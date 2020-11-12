@@ -5,7 +5,7 @@ const HomeButton = (props) => {
     return (
         <div>
             <div className="col-md-auto">
-                <a href={props.link} className="btn btn-primary btn-lg ml-3" id="home-button">
+                <a href={props.link} className="btn btn-primary btn-lg m-1" id="home-button">
                     <p id="home-button-text">{props.title}</p>
                 </a>
             </div>

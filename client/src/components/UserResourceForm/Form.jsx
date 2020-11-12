@@ -25,7 +25,7 @@ const NewUserResource = () => {
           message: "Successfully created your resource.",
           type: "success",
         }); 
-        history.push(`/user-resources/${response.data._id}`);
+        history.push(`/user-resources`);
       })
       .catch((err) => {
         console.log(err);

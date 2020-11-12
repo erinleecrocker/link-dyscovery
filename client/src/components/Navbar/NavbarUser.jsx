@@ -8,7 +8,7 @@ import "./Navbar.css";
 const NavbarUser = () => {
   return (
     <nav className="navbar fixed-top navbar-expand-md navbar-custom">
-      <Link to="/userhome" className="nav-bar-link">
+      <Link to="/user-home" className="nav-bar-link">
         <img src={Logo} alt="Link Dyscovery" />
       </Link>
 
@@ -26,18 +26,18 @@ const NavbarUser = () => {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <Link to="/verified-resources-user" className="nav-bar-link">
+            <Link to="/verified-resources-auth" className="nav-bar-link">
               Resources
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/profile" className="nav-bar-link">
+            <Link to="/profile/:id" className="nav-bar-link">
               Profile
             </Link>
           </li>
 
           <li className="nav-item">
-            <Link to="/user-resource-category" className="nav-bar-link">
+            <Link to="/auth-resource-category" className="nav-bar-link">
               Categories
             </Link>
           </li>

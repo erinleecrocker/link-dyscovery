@@ -6,7 +6,7 @@ const SiteTitle = () => {
   return (
     <div>
       <div className="row">
-      <div class="d-flex justify-content-center">
+      <div className="d-flex justify-content-center">
         <div className="col">
           <img id="main-img" src={MainLogo} />
         </div>

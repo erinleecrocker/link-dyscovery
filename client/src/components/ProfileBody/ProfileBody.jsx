@@ -1,16 +1,11 @@
-import React, {useEffect} from "react";
-import ProfileModal from "../ProfileModal/ProfileModal"
-
+import React from "react";
+// import ProfileModal from "../ProfileModal/ProfileModal";
 import ProfilePlaceholder from "../../images/profilePlaceholder.png";
 
 import "./ProfileBody.css";
 
-const ProfileBody = () => {
-
-  // const handleEditModal = () => {
-  //   <ProfileModal />
-  // }
-
+const ProfileBody = (props) => {
+  
 
   return (
     <div className="container defaultStyle">
@@ -22,7 +17,7 @@ const ProfileBody = () => {
             </div>
             <div className="col-md-4">
               <h6>Username: </h6>
-              <h6> Email: </h6>
+              <h6> Email: {props.email}</h6>
               <h6> Name: </h6>
               <h6> Age: </h6>
               <h6> Gender: </h6>

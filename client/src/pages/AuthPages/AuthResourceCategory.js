@@ -13,7 +13,7 @@ const UserResourceCategory = () => {
             <div className="d-flex">
             <div class="col">
                 <div class="row mb-4">
-                    <CategoryButton title="All Resource" link="/verified-resources-user"/>
+                    <CategoryButton title="All Resource" link="/verified-resources-auth"/>
                 </div>
                 <div className="row">
                     <CategoryButton title="ADHD" link="/auth-adhd"/>

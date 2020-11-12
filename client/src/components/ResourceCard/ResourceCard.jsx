@@ -15,7 +15,7 @@ const ResourceCard = (props) => {
             </div>
             <div className="row">
               {/* Where the Web Address and Description will go */}
-              <p> Web Address: {props.url} </p>
+              <p> Web Address: <a href={props.url} target="_blank"> {props.url}</a> </p>
               <p>
                 Description: {props.description}
               </p>

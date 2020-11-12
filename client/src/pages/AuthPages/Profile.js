@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import ProfileBody from "../components/ProfileBody/ProfileBody";
-import NavbarUser from "../components/Navbar/NavbarUser";
+import ProfileBody from "../../components/ProfileBody/ProfileBody"
+import NavbarUser from "../../components/Navbar/NavbarUser";
 
-import API from "../utils/API";
+import API from "../../utils/API";
 
 const Profile = () => {
   const [oneUser, setOneUser] = useState([]);

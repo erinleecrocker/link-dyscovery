@@ -1,8 +1,8 @@
 import React from "react";
-import ResourceBox from "../components/ResourceBox/ResourceBox";
-import CategoryButton from "../components/CategoryButton/CategoryButton";
-import ResourceResultDisplay from "../components/ResourceResultDisplay/ResourceResultDisplay";
-import NavbarUser from "../components/Navbar/NavbarUser";
+import ResourceBox from "../../components/ResourceBox/ResourceBox";
+import CategoryButton from "../../components/CategoryButton/CategoryButton";
+import ResourceResultDisplay from "../../components/ResourceResultDisplay/ResourceResultDisplay";
+import NavbarUser from "../../components/Navbar/NavbarUser";
 
 const UserResourceCategory = () => {
   return (
@@ -16,24 +16,24 @@ const UserResourceCategory = () => {
                     <CategoryButton title="All Resource" link="/verified-resources-user"/>
                 </div>
                 <div className="row">
-                    <CategoryButton title="ADHD" link="/verified-resources-user"/>
+                    <CategoryButton title="ADHD" link="/auth-adhd"/>
                 </div>
             </div>
             <div class="col">
                 <div class="row mb-4">
-                <CategoryButton title="Dyslexia" link="/verified-resources-user"/>
+                <CategoryButton title="Dyslexia" link="/auth-dyslexia"/>
                 </div>
                 <div class="row">
-                    <CategoryButton title="Dyscalculia" link="/verified-resources-user"/>
+                    <CategoryButton title="Dyscalculia" link="/auth-dyscalculia"/>
                 </div>
                 
             </div>
             <div class="col">
                 <div class="row mb-4">
-                    <CategoryButton title="Dysgraphia" link="/verified-resources-user"/>
+                    <CategoryButton title="Dysgraphia" link="/auth-dysgraphia"/>
                 </div>
                 <div class="row">
-                    <CategoryButton title="Processing Deficits" link="/verified-resources-user"/>
+                    <CategoryButton title="Processing Deficits" link="/auth-processing-deficits"/>
                 </div>
             </div>
             </div>

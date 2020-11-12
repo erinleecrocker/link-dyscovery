@@ -6,6 +6,7 @@ import { useHistory } from "react-router-dom";
 import AlertContext from "../../context/AlertContext";
 // import ResourceBox from "../ResourceBox/ResourceBox";
 import axios from "axios";
+import "./Form.css";
 
 const NewUserResource = () => {
   const [title, setTitle] = useState("");
@@ -24,7 +25,7 @@ const NewUserResource = () => {
         setAlert({
           message: "Successfully created your resource.",
           type: "success",
-        }); 
+        });
         history.push(`/user-resources/${response.data._id}`);
       })
       .catch((err) => {
@@ -37,49 +38,77 @@ const NewUserResource = () => {
   };
 
   return (
-    <form
-      onSubmit={(e) => {
-        handleSubmit(e, title, url, description, category);
-      }}
-    >
-      <Input
-        label="Title"
-        id="title"
-        name="title"
-        value={title}
-        handleChange={(e) => {
-          setTitle(e.target.value);
-        }}
-      />
-      <Input
-        label="Url"
-        id="url"
-        name="url"
-        value={url}
-        handleChange={(e) => {
-          setUrl(e.target.value);
-        }}
-      />
-        <Input
-        label="Description"
-        id="description"
-        name="description"
-        value={description}
-        handleChange={(e) => {
-          setDescription(e.target.value);
-        }}
-      />
-      <div className="form-group">
-      <DropDown 
-       
-        id="category"
-        value={category}
-        handleChange={(e) => {
-          setCategory(e.target.value);
-        }}
-      ></DropDown>
-      </div>
-      {/* <div className="form-group">
+    <div className="row">
+      
+      <div className="card" id="resource-form-card">
+        <div className="row mb-5">
+        <h5 id="create-new-resource">Create a New Resource:</h5>
+        </div>
+      
+        <form
+          onSubmit={(e) => {
+            handleSubmit(e, title, url, description, category);
+          }}
+        >
+          <div className="card" id="create-new-resource-card">
+          <div className="row">
+          <div className="col-sm-6">
+          <div className="row">
+            <div className="col input-labels">
+            <Input
+              label="Title"
+              id="title"
+              name="title"
+              value={title}
+              handleChange={(e) => {
+                setTitle(e.target.value);
+              }}
+            />
+            </div>
+              <div className="col input-labels">
+            <Input
+              label="Url"
+              id="url"
+              name="url"
+              value={url}
+              handleChange={(e) => {
+                setUrl(e.target.value);
+              }}
+            />
+            </div>
+            </div>
+            <div className="row">
+              <div className="col input-labels">
+            <Input
+              label="Description"
+              id="description"
+              name="description"
+              value={description}
+              handleChange={(e) => {
+                setDescription(e.target.value);
+              }}
+            />
+            </div>
+            </div>
+          </div>
+          
+          <div classNam="col-sm-6">
+            <div className="row ml-5">
+            <div className="form-group input-labels">
+            <label id="category-label" for="category">Select catagories that apply:</label>
+              <DropDown
+                id="category"
+                value={category}
+                handleChange={(e) => {
+                  setCategory(e.target.value);
+                }}
+              ></DropDown>
+            </div>
+            </div>
+            </div>
+            </div>
+          </div>
+          {/* <div className="form-group">
         <select
           className="custom-select"
           id="categories"
@@ -95,12 +124,16 @@ const NewUserResource = () => {
           Don't see your category? Add it here.
         </button>
       </div> */}
-      <div className="text-center">
-        <button type="submit" className="btn btn-primary">
-          Create New Resource
-        </button>
+          <div className="row text-center mt-3">
+          <div className="col-sm-12">
+            <button type="submit" className="btn btn-primary" id="purple-button">
+              Create New Resource
+            </button>
+          </div>
+          </div>
+        </form>
       </div>
-    </form>
+    </div>
   );
 };
 

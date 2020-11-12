@@ -34,7 +34,7 @@ const ResourceSearchBar = ({ categoryLink }) => {
                 title="Choose a new Category"
               />
             </div>
-          </div>
+          </div> 
         </div>
       </div>
     </div>

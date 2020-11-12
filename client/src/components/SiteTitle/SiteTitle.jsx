@@ -6,12 +6,12 @@ const SiteTitle = () => {
   return (
     <div>
       <div className="row">
-      <div className="d-flex justify-content-center">
-        <div className="col">
+      <div className="d-flex">
+        <div className="col-md">
           <img id="main-img" src={MainLogo} />
         </div>
 
-        <div className="col align-self-end">
+        <div className="col-md align-self-end">
           <p id="home-title-tag">Communicating Differently Together</p>
         </div>
       </div>

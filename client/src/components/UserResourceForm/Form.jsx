@@ -16,7 +16,7 @@ const NewUserResource = () => {
   const history = useHistory();
   const { setAlert } = useContext(AlertContext);
 
-  const handleSubmit = (e, title, url, description, category) => {
+  const handleSubmit = (e, title, url, description, category ) => {
     e.preventDefault();
     axios
       .post("/api/resource", { title, url, description, category })
@@ -25,8 +25,8 @@ const NewUserResource = () => {
         setAlert({
           message: "Successfully created your resource.",
           type: "success",
-        });
-        history.push(`/user-resources/${response.data._id}`);
+        }); 
+        history.push(`/user-resources`);
       })
       .catch((err) => {
         console.log(err);
@@ -96,13 +96,15 @@ const NewUserResource = () => {
             <div className="row ml-5">
             <div className="form-group input-labels">
             <label id="category-label" for="category">Select catagories that apply:</label>
-              <DropDown
-                id="category"
-                value={category}
-                handleChange={(e) => {
-                  setCategory(e.target.value);
-                }}
-              ></DropDown>
+    <DropDown 
+       
+        id="category"
+        value={category}
+        // checked={isChecked}
+        handleChange={(e) => {
+        setCategory(e.target.value);
+        }}
+      ></DropDown>
             </div>
             </div>
             </div>

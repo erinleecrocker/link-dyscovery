@@ -15,7 +15,7 @@ const Profile = () => {
     const {id} = useParams()
     const loadUser = () => {
       API.getUser(id).then((res) => {
-        console.log(res)
+        // console.log(res)
         setOneUser(res.data);
       });
     };

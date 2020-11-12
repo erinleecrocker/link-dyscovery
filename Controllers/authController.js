@@ -134,12 +134,12 @@ router.post("/api/login", (req, res) => {
   const { emailAddress, password } = req.body;
 
   db.User.findOne({ emailAddress: emailAddress }).then((foundUser) => {
-        console.log(foundUser);
+        // console.log(foundUser);
       bcrypt
         .compare(password, foundUser.password)
-        .then(function (result) {
-          console.log(result)
-          res.json(result);
+        .then(() => {
+          // console.log(foundUser)
+          res.json(foundUser);
           // if (result) {
           //   const token = jwt.sign(
           //     { _id: foundUser._id, emailAddress: foundUser.emailAddress },
@@ -163,6 +163,8 @@ router.post("/api/login", (req, res) => {
           console.log(err);
         });
     // console.log(foundUser);
+  }).catch((err) => {
+    console.log(err);
   });
 });
 

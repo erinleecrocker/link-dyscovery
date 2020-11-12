@@ -2,6 +2,7 @@ import React from "react";
 import "./ResourceCard.css";
 import SubmitButton from '../Submit Button/SubmitButton';
 
+
 const ResourceCard = (props) => {
   return (
     <>
@@ -14,7 +15,7 @@ const ResourceCard = (props) => {
             </div>
             <div className="row">
               {/* Where the Web Address and Description will go */}
-              <p> Web Address: {props.url} </p>
+              <p> Web Address: <a href={props.url} target="_blank"> {props.url}</a> </p>
               <p>
                 Description: {props.description}
               </p>
@@ -23,6 +24,7 @@ const ResourceCard = (props) => {
           <div className="col-sm-3 ">
             <div className="row">
                 {/* This is where the rating will go */}
+                
                 <p>{props.rating}RATING</p>
             </div>
             <div className="row">

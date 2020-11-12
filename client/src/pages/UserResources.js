@@ -6,6 +6,7 @@ import ResourceCard from "../components/ResourceCard/ResourceCard";
 import ResourceForm from "../components/UserResourceForm/Form";
 import ResourceResultDisplay from "../components/ResourceResultDisplay/ResourceResultDisplay";
 import NavbarUser from "../components/Navbar/NavbarUser";
+import API from "../utils/API";
 
 import API from "../utils/API";
 

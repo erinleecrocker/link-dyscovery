@@ -8,6 +8,18 @@ import ResourceResultDisplay from "../components/ResourceResultDisplay/ResourceR
 import NavbarUser from "../components/Navbar/NavbarUser";
 
 const UserResources = () => {
+  const [allUserResources, setAllUserResources] = useState([]);
+
+  useEffect(() => {
+    loadResources();
+  }, []);
+
+  const loadResources = () => {
+    API.getResources().then((res) => {
+      setAllResources(res.data);
+    });
+  };
+
   return (
     <div>
       <NavbarUser />
@@ -15,10 +27,18 @@ const UserResources = () => {
         <ResourcePageTitle />
         {/* Resource Search Bar contains a search bar and a category filter button */}
         <ResourceSearchBar />
-        <ResourceForm/>
+        <ResourceForm />
         <ResourceResultDisplay>
-          {/* Resource Card will take in props for Title, Web Address, Description, and Review, along with a submit review button */}
-          <ResourceCard name="" url="" description="" />
+          {allResources.map((resource) => {
+            return (
+              <ResourceCard
+                key={resource._id}
+                title={resource.title}
+                url={resource.url}
+                description={resource.description}
+              />
+            );
+          })}
         </ResourceResultDisplay>
       </ResourceBox>
     </div>

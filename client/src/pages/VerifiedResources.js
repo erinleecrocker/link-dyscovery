@@ -5,21 +5,27 @@ import ResourcePageTitle from "../components/ResourcePageTitle/ResourcePageTitle
 import ResourceCard from "../components/ResourceCard/ResourceCard";
 import ResourceResultDisplay from "../components/ResourceResultDisplay/ResourceResultDisplay";
 import Navbar from '../components/Navbar/Navbar';
+import ResourcesJSON from "../verifiedResourceList"
 
-import API from "../utils/API";
+// import API from "../utils/API";
 
 const VerifiedResources = () => {
   const [allResources, setAllResources] = useState([]);
 
   useEffect(() => {
-    loadResources();
+    loadJSON();
+    // loadResources();
   }, []);
 
-  const loadResources = () => {
-    API.getResources().then((res) => {
-      setAllResources(res.data);
-    });
-  };
+const loadJSON = () => {
+  setAllResources(ResourcesJSON)
+}
+
+  // const loadResources = () => {
+  //   API.getResources().then((res) => {
+  //     setAllResources(res.data);
+  //   });
+  // };
 
   return (
  
@@ -32,7 +38,7 @@ const VerifiedResources = () => {
           <ResourceResultDisplay>
             {allResources.map((resource) => {
               return <ResourceCard 
-              key={resource._id}
+              key={resource.id}
               title={resource.title}
               url={resource.url}
               description={resource.description}

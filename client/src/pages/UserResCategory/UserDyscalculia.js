@@ -11,6 +11,10 @@ import API from "../../utils/API";
 const UserResources = () => {
   const [allUserResources, setAllUserResources] = useState([]);
 
+  const Dyscalculia = allUserResources.filter(function (dyscalculiaUserResource){
+    return dyscalculiaUserResource.category === "Dyscalculia";
+})
+
   useEffect(() => {
     loadResources();
   }, []);
@@ -28,11 +32,12 @@ const UserResources = () => {
         <ResourcePageTitle />
         {/* Resource Search Bar contains a search bar and a category filter button */}
         <ResourceSearchBar 
-        categoryTitle="All Resources"
+        categoryTitle="Dyscalculia"
         categoryLink="/user-resource-category"/>
+        
         <ResourceForm />
         <ResourceResultDisplay>
-          {allUserResources.map((resource) => {
+          {Dyscalculia.map((resource) => {
             return (
               <ResourceCard
                 key={resource._id}

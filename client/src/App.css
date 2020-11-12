@@ -4,7 +4,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family: Courier;
+  font-family: courier !important;
 }
 .container{
   margin-top:130px;

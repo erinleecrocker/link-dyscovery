@@ -17,7 +17,7 @@ const NewUserResource = () => {
   const { setAlert } = useContext(AlertContext);
 
   const handleSubmit = (e, title, url, description, category ) => {
-    e.preventDefault();
+    // e.preventDefault();
     axios
       .post("/api/resource", { title, url, description, category })
       .then((response) => {
@@ -92,10 +92,10 @@ const NewUserResource = () => {
             </div>
           </div>
           
-          <div classNam="col-sm-6">
+          <div className="col-sm-6">
             <div className="row ml-5">
             <div className="form-group input-labels">
-            <label id="category-label" for="category">Select catagories that apply:</label>
+            <label id="category-label" htmlFor="category">Select catagories that apply:</label>
     <DropDown 
        
         id="category"

@@ -8,8 +8,6 @@ import ResourceResultDisplay from "../components/ResourceResultDisplay/ResourceR
 import NavbarUser from "../components/Navbar/NavbarUser";
 import API from "../utils/API";
 
-import API from "../utils/API";
-
 const UserResources = () => {
   const [allUserResources, setAllUserResources] = useState([]);
 

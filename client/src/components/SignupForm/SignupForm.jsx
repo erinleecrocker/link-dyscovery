@@ -36,7 +36,7 @@ const SignupForm = ({ buttonText, handleSubmit, slug, cardText }) => {
           name="emailAddress"
           value={emailAddress}
           onChange={(e) => setEmailAddress(e.target.value)}
-          ref={firstInputRef}
+          // ref={firstInputRef}
         />
       </FormGroup>
       <div>

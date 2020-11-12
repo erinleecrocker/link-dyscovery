@@ -17,7 +17,7 @@ const SignUp = () => {
       .then((response) => {
         console.log(response.data);
         setJwt(response.data.data);
-        history.push("/profile");
+        history.push("/profile/" + response.data._id);
       })
       .catch((err) => {
         alert("This email is already in use. Please login or use a different email.")

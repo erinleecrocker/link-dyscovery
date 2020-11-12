@@ -18,9 +18,10 @@ const LogIn = () => {
     axios
       .post("/api/login", { emailAddress, password })
       .then((response) => {
+        console.log(response)
         console.log(response.data);
         setJwt(response.data.data);
-        history.push("/user-resource-category");
+        history.push("/profile/" + response.data._id);
       })
       .catch((err) => {
         alert("Invalid email or password");

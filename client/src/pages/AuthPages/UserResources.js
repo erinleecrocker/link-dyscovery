@@ -27,7 +27,8 @@ const UserResources = () => {
       <ResourceBox>
         <ResourcePageTitle />
         {/* Resource Search Bar contains a search bar and a category filter button */}
-        <ResourceSearchBar />
+        <ResourceSearchBar 
+        categoryTitle="All Resources"/>
         <ResourceForm />
         <ResourceResultDisplay>
           {allUserResources.map((resource) => {

@@ -15,7 +15,7 @@ const NewUserResource = () => {
   const history = useHistory();
   const { setAlert } = useContext(AlertContext);
 
-  const handleSubmit = (e, title, url, description, category) => {
+  const handleSubmit = (e, title, url, description, category ) => {
     e.preventDefault();
     axios
       .post("/api/resource", { title, url, description, category })
@@ -39,7 +39,7 @@ const NewUserResource = () => {
   return (
     <form
       onSubmit={(e) => {
-        handleSubmit(e, title, url, description, category);
+        handleSubmit(e, title, url, description, category );
       }}
     >
       <Input
@@ -74,8 +74,9 @@ const NewUserResource = () => {
        
         id="category"
         value={category}
+        // checked={isChecked}
         handleChange={(e) => {
-          setCategory(e.target.value);
+        setCategory(e.target.value);
         }}
       ></DropDown>
       </div>

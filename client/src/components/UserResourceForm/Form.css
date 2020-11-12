@@ -1,0 +1,45 @@
+#resource-form-card{
+    background-color: #F9DBC1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 1603px;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.11), 2px 1px 5px 2px rgba(0, 0, 0, 0.11);
+    padding: 50px;
+}
+
+#category-label{
+    font-family: courier;
+    font-weight: bold;
+    font-size: 13pt;
+
+} 
+
+#create-new-resource{
+    font-family: courier;
+}
+
+.input-labels{
+    font-family: courier;
+}
+
+#purple-button{
+    border-radius: 0px;
+    background-color: #BAA4C7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.11), 2px 4px 5px 2px rgba(0, 0, 0, 0.11);
+    border: 0px;
+    color: black;
+    margin-top: 20px;
+    width: 300px;
+    height: 59px;
+
+}
+
+#create-new-resource-card{
+    background-color:  #F7E3D3;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: solid 3px #8b6a9f80;
+}

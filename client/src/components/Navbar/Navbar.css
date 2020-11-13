@@ -7,6 +7,11 @@
     font-family: Courier;
 }
 /* heading for navbar */
+li.dot a:after {
+    content: '\00B7';
+    padding-left: 15px;
+}
+
 img {
     margin-top: 5px;
     width: 250px;
@@ -27,10 +32,13 @@ img {
 /* hover over links color */
 a:active{
     color:#F9DBC1;
+    
 }
+
 
 .nav-bar-link:hover {
     color:#F9DBC1;
+    text-decoration: none;
 }
 
 ul {

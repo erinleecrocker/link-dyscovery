@@ -47,6 +47,7 @@ const loadJSON = () => {
               title={resource.title}
               url={resource.url}
               description={resource.description}
+              rating={3}
 
               />;
               })}

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 // import AxiosDefaults from "../../utils/axiosDefaults"
 
 import Logo from "../../images/250x57.png";
-
+// import { useHistory } from "react-router-dom";
 import "./Navbar.css";
 
 const NavbarUser = () => {
@@ -16,6 +16,21 @@ const [navId, setNavId] = useState([])
   
   // const {_id} = token._id;
   // console.log(AxiosDefaults)
+  // const history = useHistory();
+
+  // // const handleSubmit = (e, _id) => {
+  // //   e.preventDefault();
+  // //   axios
+  // //   .get("/api/:id", { _id})
+  // //     .then((response) => {
+  // //       history.push("/profile/" + response._id);
+  // //     })
+  // //     .catch((err) => {
+  // //       alert("Invalid email or password");
+  // //       console.log(err);
+  // //     });
+  // // };
+
   return (
     <nav className="navbar fixed-top navbar-expand-md navbar-custom">
       <Link to="/auth-home" className="nav-bar-link">

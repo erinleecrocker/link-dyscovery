@@ -70,7 +70,7 @@ function App() {
           <Route exact path="/auth-dysgraphia" component={AuthDysgraphia} />
           <Route exact path="/auth-dyslexia" component={AuthDyslexia} />
           <Route exact path="/auth-processing-deficits" component={AuthProcessingDeficits} />
-          <Route exact path="/profile/:id" component={Profile} />
+          <Route exact path="/profile" component={Profile} />
           <Route exact path="/user-resources" component={UserResources} />
           <Route exact path="/user-resource-category" component={UserResourceCategory} />
           <Route exact path="/user-adhd" component={UserADHD} />

@@ -9,7 +9,7 @@ import ResourcesJSON from "../../verifiedResourceList"
 
 // import API from "../../utils/API";
 
-const UserVerifiedResources = () => {
+const AuthVerifiedResources = () => {
   const [allResources, setAllResources] = useState([]);
 
   useEffect(() => {
@@ -53,4 +53,4 @@ const loadJSON = () => {
   );
 };
 
-export default UserVerifiedResources;
+export default AuthVerifiedResources;

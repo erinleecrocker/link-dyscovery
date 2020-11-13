@@ -1,11 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+// import axios from "axios";
 import Logo from "../../images/250x57.png";
-
+// import { useHistory } from "react-router-dom";
 import "./Navbar.css";
 
 const NavbarUser = () => {
+  // const history = useHistory();
+
+  // // const handleSubmit = (e, _id) => {
+  // //   e.preventDefault();
+  // //   axios
+  // //   .get("/api/:id", { _id})
+  // //     .then((response) => {
+  // //       history.push("/profile/" + response._id);
+  // //     })
+  // //     .catch((err) => {
+  // //       alert("Invalid email or password");
+  // //       console.log(err);
+  // //     });
+  // // };
+
   return (
     <nav className="navbar fixed-top navbar-expand-md navbar-custom">
       <Link to="/auth-home" className="nav-bar-link">
@@ -31,7 +46,7 @@ const NavbarUser = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/profile/:id" className="nav-bar-link">
+            <Link to="/profile" className="nav-bar-link">
               Profile
             </Link>
           </li>

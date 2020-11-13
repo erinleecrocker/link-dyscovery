@@ -25,7 +25,7 @@ const Navbar = () => {
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto">
-          <li className="nav-item">
+          <li className="nav-item dot">
             <Link to="/verified-resources" className="nav-bar-link">
               Resources
             </Link>

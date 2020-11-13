@@ -11,6 +11,10 @@ body {
   margin-bottom:100px;
 }
 
+a:hover { 
+  text-decoration: none; 
+} 
+
 p {
   font-family: Courier;
 }

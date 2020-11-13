@@ -20,6 +20,11 @@ const ProfileBody = (props) => {
                       alt="placeholder"
                     />
                   </div>
+                  <form action="/action_page.php">
+                    <label htmlFor="img">Select image:</label>
+                    <input type="file" id="img" name="img" accept="image/*" />
+                    <input type="submit" />
+                  </form>
                 </div>
                 <div className="row ml-2 mb-4">
                   <div className="col-md-12">
@@ -46,7 +51,6 @@ const ProfileBody = (props) => {
                       <h6> Age: {props.age}</h6>
                       <h6> Gender: {props.gender}</h6>
                       <h6> Location: {props.location}</h6>
-                      
                     </div>
                   </div>
                   <div className="row">
@@ -54,7 +58,11 @@ const ProfileBody = (props) => {
                       <button className="btn" id="profile-button">
                         Edit Profile
                       </button>
-                      <button onClick={props.handleDeleteSubmit} className="btn" id="profile-button">
+                      <button
+                        onClick={props.handleDeleteSubmit}
+                        className="btn"
+                        id="profile-button"
+                      >
                         Delete Profile
                       </button>
                     </div>
@@ -66,15 +74,13 @@ const ProfileBody = (props) => {
                   <div className="col-md-12">
                     <div className="row">
                       <div className="col-md-12">
-                      <h6 className="input-labels-bold">About Me:</h6>
+                        <h6 className="input-labels-bold">About Me:</h6>
                       </div>
                     </div>
                     <div className="row ml-1">
                       <div className="col-md-12 input-labels">
-                    <p>
-                      {props.bio}
-                    </p>
-                    </div>
+                        <p>{props.bio}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -85,15 +91,15 @@ const ProfileBody = (props) => {
       </div>
       <div className="card">
         <ProfileChanges
-        handleFirstNameChange={props.handleFirstNameChange}
-        handleLastNameChange={props.handleLastNameChange}
-        handleUserNameChange={props.handleUserNameChange}
-        handleAgeChange={props.handleAgeChange}
-        handleGenderChange={props.handleGenderChange}
-        handleLocationChange={props.handleLocationChange}
-        handleBioChange={props.handleBioChange}
-        handleEditSubmit={props.handleEditSubmit}
-         />
+          handleFirstNameChange={props.handleFirstNameChange}
+          handleLastNameChange={props.handleLastNameChange}
+          handleUserNameChange={props.handleUserNameChange}
+          handleAgeChange={props.handleAgeChange}
+          handleGenderChange={props.handleGenderChange}
+          handleLocationChange={props.handleLocationChange}
+          handleBioChange={props.handleBioChange}
+          handleEditSubmit={props.handleEditSubmit}
+        />
       </div>
     </div>
   );

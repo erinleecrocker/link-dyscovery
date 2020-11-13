@@ -33,13 +33,13 @@ const loadJSON = () => {
      <NavbarUser />
         <ResourceBox>
           <ResourcePageTitle />
-          <ResourceSearchBar 
+          <ResourceSearchBar
           categoryTitle="All Resources"
           categoryLink="/auth-resource-category"/>
           <ResourceResultDisplay>
             {allResources.map((resource) => {
               return <ResourceCard 
-              key={resource._id}
+              key={resource.id}
               title={resource.title}
               url={resource.url}
               description={resource.description}

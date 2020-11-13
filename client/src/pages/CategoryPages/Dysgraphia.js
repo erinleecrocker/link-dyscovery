@@ -38,6 +38,7 @@ const loadJSON = () => {
         <ResourceBox>
           <ResourcePageTitle />
           <ResourceSearchBar 
+          categoryTitle="Dysgraphia"
           categoryLink="/resource-category" />
           <ResourceResultDisplay>
             Coming Soon!

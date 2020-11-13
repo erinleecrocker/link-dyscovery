@@ -38,6 +38,7 @@ const loadJSON = () => {
         <ResourceBox>
           <ResourcePageTitle />
           <ResourceSearchBar 
+          categoryTitle="ADHD"
           categoryLink="/resource-category" />
           <ResourceResultDisplay>
             {ADHD.map((resource) => {

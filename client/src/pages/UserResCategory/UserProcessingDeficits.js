@@ -11,6 +11,10 @@ import API from "../../utils/API";
 const UserResources = () => {
   const [allUserResources, setAllUserResources] = useState([]);
 
+  const ProcessingDeficits = allUserResources.filter(function (processingDeficitsUserResource){
+    return processingDeficitsUserResource.category === "ProcessingDeficits";
+})
+
   useEffect(() => {
     loadResources();
   }, []);
@@ -20,7 +24,6 @@ const UserResources = () => {
       setAllUserResources(res.data);
     });
   };
-  
 
   return (
     <div>
@@ -29,18 +32,18 @@ const UserResources = () => {
         <ResourcePageTitle />
         {/* Resource Search Bar contains a search bar and a category filter button */}
         <ResourceSearchBar 
-        categoryTitle="All Resources"
+        categoryTitle="Processing Deficits"
         categoryLink="/user-resource-category"/>
+        
         <ResourceForm />
         <ResourceResultDisplay>
-          {allUserResources.map((resource) => {
+          {ProcessingDeficits.map((resource) => {
             return (
               <ResourceCard
                 key={resource._id}
                 title={resource.title}
                 url={resource.url}
                 description={resource.description}
-                rating={2.5}
               />
             );
           })}

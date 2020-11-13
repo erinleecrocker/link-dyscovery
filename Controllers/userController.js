@@ -21,6 +21,7 @@ router.post("/", (req, res) => {
 });
 
 router.put("/:id", (req, res) => {
+  console.log(req.body)
     db.User.findByIdAndUpdate({ _id: req.params.id }, req.body, {
       new: true,
     }).then((updateUser) => {
@@ -29,8 +30,9 @@ router.put("/:id", (req, res) => {
   });
   
   router.delete("/:id", (req, res) => {
-    db.User.findByIdAndDelete(req.params.id).then((deleteUser) => {
-      res.json(deleteUser);
+    db.User.findByIdAndDelete(req.params.id).then((deletedUser) => {
+      res.json(deletedUser);
+      console.log("User was deleted" + deletedUser)
     });
   });
 

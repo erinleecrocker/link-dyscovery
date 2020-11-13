@@ -38,6 +38,7 @@ const loadJSON = () => {
         <ResourceBox>
           <ResourcePageTitle />
           <ResourceSearchBar 
+          categoryTitle="Dyscalculia"
           categoryLink="/resource-category" />
           <ResourceResultDisplay>
             {Dyscalculia.map((resource) => {

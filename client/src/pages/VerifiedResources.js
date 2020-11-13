@@ -34,6 +34,7 @@ const loadJSON = () => {
         <ResourceBox>
           <ResourcePageTitle />
           <ResourceSearchBar 
+          categoryTitle="All Resources"
           categoryLink="/resource-category" />
           <ResourceResultDisplay>
             {allResources.map((resource) => {

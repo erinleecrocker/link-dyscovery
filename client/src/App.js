@@ -4,24 +4,33 @@ import { BrowserRouter, Route } from "react-router-dom";
 // Page Imports
 import CreateAccount from "./pages/CreateAccount";
 import Home from "./pages/Home";
-import AuthHome from "./pages/AuthPages/AuthHome";
+import VerifiedResources from "./pages/VerifiedResources";
 import Login from "./pages/Login";
+import AuthHome from "./pages/AuthPages/AuthHome";
+import AuthVerifiedResources from "./pages/AuthPages/AuthVerifiedResources";
 import Profile from "./pages/AuthPages/Profile";
 import UserResources from "./pages/AuthPages/UserResources";
+import UserResourceCategory from "./pages/AuthPages/UserResourceCategory";
+import UserADHD from "./pages/UserResCategory/UserADHD";
+import UserDyslexia from "./pages/UserResCategory/UserDyslexia";
+import UserDyscalculia from "./pages/UserResCategory/UserDyscalculia";
+import UserDysgraphia from "./pages/UserResCategory/UserDysgraphia";
+import UserProcessingDeficits from "./pages/UserResCategory/UserProcessingDeficits";
 import ResourceCategory from "./pages/ResourceCategory";
 import ADHD from "./pages/CategoryPages/ADHD";
 import Dyscalculia from "./pages/CategoryPages/Dyscalculia";
 import Dysgraphia from "./pages/CategoryPages/Dysgraphia";
 import Dyslexia from "./pages/CategoryPages/Dyslexia";
 import ProcessingDeficits from "./pages/CategoryPages/ProcessingDeficits";
+import AuthResourceCategory from "./pages/AuthPages/AuthResourceCategory";
 import AuthADHD from "./pages/AuthCategoryPages/AuthADHD";
 import AuthDyscalculia from "./pages/AuthCategoryPages/AuthDyscalculia";
 import AuthDysgraphia from "./pages/AuthCategoryPages/AuthDysgraphia";
 import AuthDyslexia from "./pages/AuthCategoryPages/AuthDyslexia";
 import AuthProcessingDeficits from "./pages/AuthCategoryPages/AuthProcessingDeficits";
-import AuthResourceCategory from "./pages/AuthPages/AuthResourceCategory";
-import VerifiedResources from "./pages/VerifiedResources";
-import AuthVerifiedResources from "./pages/AuthPages/AuthVerifiedResources";
+
+
+
 // Component Imports
 // import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -63,6 +72,12 @@ function App() {
           <Route exact path="/auth-processing-deficits" component={AuthProcessingDeficits} />
           <Route exact path="/profile/:id" component={Profile} />
           <Route exact path="/user-resources" component={UserResources} />
+          <Route exact path="/user-resource-category" component={UserResourceCategory} />
+          <Route exact path="/user-adhd" component={UserADHD} />
+          <Route exact path="/user-dyslexia" component={UserDyslexia} />
+          <Route exact path="/user-dyscalculia" component={UserDyscalculia} />
+          <Route exact path="/user-dysgraphia" component={UserDysgraphia} />
+          <Route exact path="/user-processing-deficits" component={UserProcessingDeficits} />
           <Route exact path="/resource-category" component={ResourceCategory} />
           <Route exact path="/auth-resource-category" component={AuthResourceCategory} />
           <Route exact path="/verified-resources" component={VerifiedResources} />

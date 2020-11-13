@@ -8,7 +8,7 @@ import "./Navbar.css";
 const NavbarUser = () => {
   return (
     <nav className="navbar fixed-top navbar-expand-md navbar-custom">
-      <Link to="/user-home" className="nav-bar-link">
+      <Link to="/auth-home" className="nav-bar-link">
         <img src={Logo} alt="Link Dyscovery" />
       </Link>
 

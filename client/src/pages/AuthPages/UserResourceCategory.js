@@ -4,7 +4,7 @@ import CategoryButton from "../../components/CategoryButton/CategoryButton";
 import ResourceResultDisplay from "../../components/ResourceResultDisplay/ResourceResultDisplay";
 import NavbarUser from "../../components/Navbar/NavbarUser";
 
-const AuthResourceCategory = () => {
+const UserResourceCategory = () => {
   return (
     <div>
        <NavbarUser />
@@ -13,27 +13,27 @@ const AuthResourceCategory = () => {
             <div className="d-flex">
             <div class="col">
                 <div class="row mb-4">
-                    <CategoryButton title="All Resource" link="/verified-resources-auth"/>
+                    <CategoryButton title="All Resource" link="/user-resources"/>
                 </div>
                 <div className="row">
-                    <CategoryButton title="ADHD" link="/auth-adhd"/>
+                    <CategoryButton title="ADHD" link="/user-adhd"/>
                 </div>
             </div>
             <div class="col">
                 <div class="row mb-4">
-                <CategoryButton title="Dyslexia" link="/auth-dyslexia"/>
+                <CategoryButton title="Dyslexia" link="/user-dyslexia"/>
                 </div>
                 <div class="row">
-                    <CategoryButton title="Dyscalculia" link="/auth-dyscalculia"/>
+                    <CategoryButton title="Dyscalculia" link="/user-dyscalculia"/>
                 </div>
                 
             </div>
             <div class="col">
                 <div class="row mb-4">
-                    <CategoryButton title="Dysgraphia" link="/auth-dysgraphia"/>
+                    <CategoryButton title="Dysgraphia" link="/user-dysgraphia"/>
                 </div>
                 <div class="row">
-                    <CategoryButton title="Processing Deficits" link="/auth-processing-deficits"/>
+                    <CategoryButton title="Processing Deficits" link="/user-processing-deficits"/>
                 </div>
             </div>
             </div>
@@ -43,4 +43,4 @@ const AuthResourceCategory = () => {
   );
 };
 
-export default AuthResourceCategory;
+export default UserResourceCategory;

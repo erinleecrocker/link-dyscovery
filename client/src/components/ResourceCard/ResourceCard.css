@@ -6,3 +6,12 @@
     padding-right: 30px;
     outline: solid 3px #8b6a9f80;
 }
+
+.input-labels{
+    font-family: courier;
+}
+
+.input-label-bold{
+    font-family: courier;
+    font-style: bold;
+}

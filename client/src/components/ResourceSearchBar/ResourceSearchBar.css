@@ -4,8 +4,8 @@
     align-content: center;
 }
 
-#category-label{
-    font-size: 15pt;
+#category-label-1{
+    font-size: 15pt !important;
     margin-top: 12px;
 }
 

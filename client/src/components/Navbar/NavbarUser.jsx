@@ -1,11 +1,21 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
+// import AxiosDefaults from "../../utils/axiosDefaults"
 
 import Logo from "../../images/250x57.png";
 
 import "./Navbar.css";
 
 const NavbarUser = () => {
+const [navId, setNavId] = useState([])
+
+  useEffect(() => {
+    const userId = localStorage.getItem("loginId")
+    setNavId(userId)
+  }, [])
+  
+  // const {_id} = token._id;
+  // console.log(AxiosDefaults)
   return (
     <nav className="navbar fixed-top navbar-expand-md navbar-custom">
       <Link to="/auth-home" className="nav-bar-link">
@@ -31,7 +41,7 @@ const NavbarUser = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/profile/:id" className="nav-bar-link">
+            <Link to={"/profile/" + navId} className="nav-bar-link">
               Profile
             </Link>
           </li>

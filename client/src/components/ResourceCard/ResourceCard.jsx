@@ -44,6 +44,7 @@ const ResourceCard = (props) => {
                   onChange={ratingChanged}
                   size={50}
                   color2={"#ffd700"}
+                  
                   value={props.rating}
                 />     
             </div>

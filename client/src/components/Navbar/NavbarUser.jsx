@@ -18,18 +18,18 @@ const [navId, setNavId] = useState([])
   // console.log(AxiosDefaults)
   // const history = useHistory();
 
-  // // const handleSubmit = (e, _id) => {
-  // //   e.preventDefault();
-  // //   axios
-  // //   .get("/api/:id", { _id})
-  // //     .then((response) => {
-  // //       history.push("/profile/" + response._id);
-  // //     })
-  // //     .catch((err) => {
-  // //       alert("Invalid email or password");
-  // //       console.log(err);
-  // //     });
-  // // };
+  // const handleSubmit = (e, _id) => {
+  //   e.preventDefault();
+  //   axios
+  //   .get("/api/:id", { _id})
+  //     .then((response) => {
+  //       history.push("/profile/" + response._id);
+  //     })
+  //     .catch((err) => {
+  //       alert("Invalid email or password");
+  //       console.log(err);
+  //     });
+  // };
 
   return (
     <nav className="navbar fixed-top navbar-expand-md navbar-custom">

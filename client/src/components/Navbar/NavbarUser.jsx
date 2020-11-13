@@ -1,11 +1,36 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
+// import AxiosDefaults from "../../utils/axiosDefaults"
 
 import Logo from "../../images/250x57.png";
-
+// import { useHistory } from "react-router-dom";
 import "./Navbar.css";
 
 const NavbarUser = () => {
+const [navId, setNavId] = useState([])
+
+  useEffect(() => {
+    const userId = localStorage.getItem("loginId")
+    setNavId(userId)
+  }, [])
+  
+  // const {_id} = token._id;
+  // console.log(AxiosDefaults)
+  // const history = useHistory();
+
+  // const handleSubmit = (e, _id) => {
+  //   e.preventDefault();
+  //   axios
+  //   .get("/api/:id", { _id})
+  //     .then((response) => {
+  //       history.push("/profile/" + response._id);
+  //     })
+  //     .catch((err) => {
+  //       alert("Invalid email or password");
+  //       console.log(err);
+  //     });
+  // };
+
   return (
     <nav className="navbar fixed-top navbar-expand-md navbar-custom">
       <Link to="/auth-home" className="nav-bar-link">
@@ -31,7 +56,7 @@ const NavbarUser = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/profile/:id" className="nav-bar-link">
+            <Link to={"/profile/" + navId} className="nav-bar-link">
               Profile
             </Link>
           </li>

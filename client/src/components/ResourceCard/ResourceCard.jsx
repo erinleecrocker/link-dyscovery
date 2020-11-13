@@ -50,7 +50,7 @@ const ResourceCard = (props) => {
             </div>
             <div className="row justify-content-center">
               {/* This is where the Button to submit review will go */}
-              <SubmitButton>Submit Review</SubmitButton>
+              <SubmitButton>Submit Rating</SubmitButton>
             </div>
           </div>
         </div>

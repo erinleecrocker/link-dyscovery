@@ -17,6 +17,7 @@ const SignUp = () => {
       .then((response) => {
         console.log(response.data);
         setJwt(response.data.data);
+        localStorage.setItem("loginId", response.data._id)
         history.push("/profile/" + response.data._id);
       })
       .catch((err) => {

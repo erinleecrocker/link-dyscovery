@@ -12,7 +12,7 @@ const SignupForm = ({ buttonText, handleSubmit, slug, cardText }) => {
   //   firstInputRef.current.focus();
   // }, []);
     const validateForm = () => {
-    return emailAddress.length > 3 && password.length > 5;
+    return emailAddress.length > 3 && password.length >= 8;
     
   };
 

@@ -9,7 +9,7 @@ import ResourcesJSON from "../../verifiedResourceList"
 
 // import API from "../../utils/API";
 
-const UserVerifiedResources = () => {
+const AuthVerifiedResources = () => {
   const [allResources, setAllResources] = useState([]);
 
   useEffect(() => {
@@ -33,13 +33,13 @@ const loadJSON = () => {
      <NavbarUser />
         <ResourceBox>
           <ResourcePageTitle />
-          <ResourceSearchBar 
+          <ResourceSearchBar
           categoryTitle="All Resources"
           categoryLink="/auth-resource-category"/>
           <ResourceResultDisplay>
             {allResources.map((resource) => {
               return <ResourceCard 
-              key={resource._id}
+              key={resource.id}
               title={resource.title}
               url={resource.url}
               description={resource.description}
@@ -54,4 +54,4 @@ const loadJSON = () => {
   );
 };
 
-export default UserVerifiedResources;
+export default AuthVerifiedResources;

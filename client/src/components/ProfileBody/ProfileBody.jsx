@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import ProfileChanges from "../ProfileChanges/ProfileChanges";
 import ProfilePlaceholder from "../../images/profilePlaceholder.png";
 
 import "./ProfileBody.css";
 
 const ProfileBody = (props) => {
+
+  const [modalShow, setModalShow] = React.useState(true);
+
   return (
     <div className="container">
       <div className="card">
@@ -55,7 +58,7 @@ const ProfileBody = (props) => {
                   </div>
                   <div className="row">
                     <div className="col-md-12">
-                      <button className="btn" id="profile-button">
+                      <button className="btn" id="profile-button" variant="primary" onClick={() => setModalShow(true)}>
                         Edit Profile
                       </button>
                       <button
@@ -91,6 +94,8 @@ const ProfileBody = (props) => {
       </div>
       <div className="row mt-4">
         <ProfileChanges
+          show={modalShow}
+          onHide={() => setModalShow(false)}
           handleFirstNameChange={props.handleFirstNameChange}
           handleLastNameChange={props.handleLastNameChange}
           handleUserNameChange={props.handleUserNameChange}
@@ -99,6 +104,12 @@ const ProfileBody = (props) => {
           handleLocationChange={props.handleLocationChange}
           handleBioChange={props.handleBioChange}
           handleEditSubmit={props.handleEditSubmit}
+          // Username = {props.userName}
+          // Email = {props.emailAddress}
+          // Name = {props.fullName}
+          // Age = {props.age}
+          // Gender = {props.gender}
+          // Location = {props.location}
         />
       </div>
     </div>

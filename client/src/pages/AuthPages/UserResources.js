@@ -20,6 +20,7 @@ const UserResources = () => {
       setAllUserResources(res.data);
     });
   };
+  
 
   return (
     <div>
@@ -37,6 +38,7 @@ const UserResources = () => {
                 title={resource.title}
                 url={resource.url}
                 description={resource.description}
+                rating={2.5}
               />
             );
           })}

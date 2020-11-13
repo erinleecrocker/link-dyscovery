@@ -28,17 +28,17 @@ const ProfileModal = () => {
               placeholder="Last Name"
             />
             <input className="form-control" type="number" placeholder="Age" />
-            <div class="form-group col-md-4">
+            <div className="form-group col-md-4">
               <label for="inputState">Gender</label>
-              <select id="inputState" class="form-control">
+              <select id="inputState" className="form-control">
                 <option selected>Choose...</option>
                 <option>Male</option>
                 <option>Female</option>
                 <option>Other</option>
               </select>
             </div>
-            <div class="form-group col-md-4">
-              <select class="selectpicker" multiple>
+            <div className="form-group col-md-4">
+              <select className="selectpicker" multiple>
                 <option>Oral/Written Language Disorder</option>
                 <option>Specific Reading Comprehension Deficit</option>
                 <option>Non-Verbal Learning Disability</option>
@@ -48,12 +48,12 @@ const ProfileModal = () => {
               </select>
             </div>
 
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text">About Me:</span>
+            <div className="input-group">
+              <div className="input-group-prepend">
+                <span className="input-group-text">About Me:</span>
               </div>
               <textarea
-                class="form-control"
+                className="form-control"
                 aria-label="With textarea"
               ></textarea>
             </div>

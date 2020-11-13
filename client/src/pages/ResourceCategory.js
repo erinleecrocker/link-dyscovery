@@ -11,28 +11,28 @@ const ResourceCategory = () => {
       <ResourceBox>
         <ResourceResultDisplay>
             <div className="d-flex">
-            <div class="col">
-                <div class="row mb-4">
+            <div className="col">
+                <div className="row mb-4">
                     <CategoryButton title="All Resource" link="/verified-resources"/>
                 </div>
                 <div className="row">
                     <CategoryButton title="ADHD" link="/adhd"/>
                 </div>
             </div>
-            <div class="col">
-                <div class="row mb-4">
+            <div className="col">
+                <div className="row mb-4">
                 <CategoryButton title="Dyslexia" link="/dyslexia"/>
                 </div>
-                <div class="row">
+                <div className="row">
                     <CategoryButton title="Dyscalculia" link="/dyscalculia"/>
                 </div>
                 
             </div>
-            <div class="col">
-                <div class="row mb-4">
+            <div className="col">
+                <div className="row mb-4">
                     <CategoryButton title="Dysgraphia" link="/dysgraphia"/>
                 </div>
-                <div class="row">
+                <div className="row">
                     <CategoryButton title="Processing Deficits" link="/processing-deficits"/>
                 </div>
             </div>

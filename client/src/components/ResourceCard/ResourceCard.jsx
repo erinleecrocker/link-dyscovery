@@ -42,14 +42,14 @@ const ResourceCard = (props) => {
                 <StarsRating
                   count={5}
                   onChange={ratingChanged}
-                  size={35}
+                  size={50}
                   color2={"#ffd700"}
                   value={props.rating}
                 />     
             </div>
             <div className="row justify-content-center">
               {/* This is where the Button to submit review will go */}
-              <SubmitButton>Submit Review</SubmitButton>
+              <SubmitButton>Submit Rating</SubmitButton>
             </div>
           </div>
         </div>

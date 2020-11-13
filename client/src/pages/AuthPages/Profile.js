@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import ProfileBody from "../../components/ProfileBody/ProfileBody";
 import NavbarUser from "../../components/Navbar/NavbarUser";
 import axios from "axios";
@@ -16,6 +16,7 @@ const Profile = () => {
   const [gender, setGender] = useState([]);
   const [location, setLocation] = useState([]);
   const [bio, setBio] = useState([]);
+  const history = useHistory();
 
   useEffect(() => {
     loadUser();
@@ -42,6 +43,15 @@ const Profile = () => {
         console.log(err);
       });
   };
+
+  const handleDeleteSubmit = (e) => {
+    API.deleteUser(id).then((res) => {
+      // console.log(res)
+      setOneUser(res.data);
+      history.push("/");
+
+    });
+  }
 
   return (
     <>
@@ -77,6 +87,8 @@ const Profile = () => {
           setBio(e.target.value);
         }}
         handleEditSubmit={handleEditSubmit}
+        handleDeleteSubmit={handleDeleteSubmit}
+
       />
     </>
   );

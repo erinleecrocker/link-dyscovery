@@ -30,8 +30,9 @@ router.put("/:id", (req, res) => {
   });
   
   router.delete("/:id", (req, res) => {
-    db.User.findByIdAndDelete(req.params.id).then((deleteUser) => {
-      res.json(deleteUser);
+    db.User.findByIdAndDelete(req.params.id).then((deletedUser) => {
+      res.json(deletedUser);
+      console.log("User was deleted" + deletedUser)
     });
   });
 

@@ -54,7 +54,7 @@ const ProfileBody = (props) => {
                       <button className="btn" id="profile-button">
                         Edit Profile
                       </button>
-                      <button className="btn" id="profile-button">
+                      <button onClick={props.handleDeleteSubmit} className="btn" id="profile-button">
                         Delete Profile
                       </button>
                     </div>

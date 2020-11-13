@@ -42,8 +42,9 @@ const ResourceCard = (props) => {
                 <StarsRating
                   count={5}
                   onChange={ratingChanged}
-                  size={35}
+                  size={50}
                   color2={"#ffd700"}
+                  
                   value={props.rating}
                 />     
             </div>

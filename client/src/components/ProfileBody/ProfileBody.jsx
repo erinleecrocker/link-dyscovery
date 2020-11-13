@@ -83,7 +83,7 @@ const ProfileBody = (props) => {
           </div>
         </div>
       </div>
-      <div className="card">
+      <div className="row mt-4">
         <ProfileChanges
         handleFirstNameChange={props.handleFirstNameChange}
         handleLastNameChange={props.handleLastNameChange}
@@ -96,6 +96,7 @@ const ProfileBody = (props) => {
          />
       </div>
     </div>
+    
   );
 };
 

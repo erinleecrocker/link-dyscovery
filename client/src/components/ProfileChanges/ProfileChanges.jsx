@@ -7,7 +7,7 @@ const ProfileChanges = (props) => {
     // <div className="container">
     <div className="col-md-6">
       <div className="form">
-        <div className="card defaultStyle">
+        <div className="card" id="defaultStyleProfile">
         <div className="row mb-4 mt-1">
           <div className="col-md-12">
           <h5>Edit Profile: </h5>

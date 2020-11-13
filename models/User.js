@@ -23,6 +23,10 @@ const UserSchema = new Schema(
       type: String,
       trim: true,
     },
+    userName: {
+      type: String,
+      trim: true,
+    },
     age: {
       type: Number,
       trim: true,
@@ -44,12 +48,12 @@ const UserSchema = new Schema(
       trim: true,
     },
   },
-  // { toJSON: { virtuals: true } }
+  { toJSON: { virtuals: true } }
 );
 
-// UserSchema.virtual("fullName").get(function () {
-//   return `${this.firstName} ${this.lastName}`;
-// });
+UserSchema.virtual("fullName").get(function () {
+  return `${this.firstName} ${this.lastName}`;
+});
 
 const User = mongoose.model("User", UserSchema);
 

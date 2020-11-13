@@ -21,6 +21,7 @@ router.post("/", (req, res) => {
 });
 
 router.put("/:id", (req, res) => {
+  console.log(req.body)
     db.User.findByIdAndUpdate({ _id: req.params.id }, req.body, {
       new: true,
     }).then((updateUser) => {

@@ -8,10 +8,10 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Bringing in Controllers:
-const AuthController = require("./controllers/authController")
-const UserController = require("./controllers/userController");
-const ResourceController = require("./controllers/resourceController")
-const FeedbackController = require("./controllers/feedbackController");
+const AuthController = require("./Controllers/authController")
+const UserController = require("./Controllers/userController");
+const ResourceController = require("./Controllers/resourceController")
+const FeedbackController = require("./Controllers/feedbackController");
 
 
 // Define middleware here

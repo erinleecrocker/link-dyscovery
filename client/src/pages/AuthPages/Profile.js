@@ -19,16 +19,20 @@ const Profile = () => {
   const history = useHistory();
 
   useEffect(() => {
-    loadUser();
-  }, []);
-
-  const { id } = useParams();
-  const loadUser = () => {
+    // loadUser();
     API.getUser(id).then((res) => {
       // console.log(res)
       setOneUser(res.data);
     });
-  };
+  }, []);
+
+  const { id } = useParams();
+  // const loadUser = () => {
+  //   API.getUser(id).then((res) => {
+  //     // console.log(res)
+  //     setOneUser(res.data);
+  //   });
+  // };
 
   const handleEditSubmit = (e) => {
     

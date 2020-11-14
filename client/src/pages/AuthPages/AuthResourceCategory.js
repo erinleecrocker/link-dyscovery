@@ -7,36 +7,34 @@ import NavbarUser from "../../components/Navbar/NavbarUser";
 const AuthResourceCategory = () => {
   return (
     <div>
-       <NavbarUser />
+      <NavbarUser />
       <ResourceBox>
         <ResourceResultDisplay>
-            <div className="d-flex">
-            <div className="col">
-                <div className="row mb-4">
-                    <CategoryButton title="All Resource" link="/verified-resources-auth"/>
-                </div>
-                <div className="row">
-                    <CategoryButton title="ADHD" link="/auth-adhd"/>
-                </div>
+          <div className="row mb-sm-4">
+            <div ClassName="col-sm-4">
+              <CategoryButton title="All Resource" link="/auth-resources" />
             </div>
-            <div className="col">
-                <div className="row mb-4">
-                <CategoryButton title="Dyslexia" link="/auth-dyslexia"/>
-                </div>
-                <div className="row">
-                    <CategoryButton title="Dyscalculia" link="/auth-dyscalculia"/>
-                </div>
-                
+            <div ClassName="col-sm-4">
+              <CategoryButton title="ADHD" link="/auth-adhd" />
             </div>
-            <div className="col">
-                <div className="row mb-4">
-                    <CategoryButton title="Dysgraphia" link="/auth-dysgraphia"/>
-                </div>
-                <div className="row">
-                    <CategoryButton title="Processing Deficits" link="/auth-processing-deficits"/>
-                </div>
+            <div ClassName="col-sm-4">
+              <CategoryButton title="Dyslexia" link="/auth-dyslexia" />
             </div>
+          </div>
+          <div className="row">
+            <div ClassName="col-sm-4">
+              <CategoryButton title="Dyscalculia" link="/auth-dyscalculia" />
             </div>
+            <div ClassName="col-sm-4">
+              <CategoryButton title="Dysgraphia" link="/auth-dysgraphia" />
+            </div>
+            <div ClassName="col-sm-4">
+              <CategoryButton
+                title="Processing Deficits"
+                link="/auth-processing-deficits"
+              />
+            </div>
+          </div>
         </ResourceResultDisplay>
       </ResourceBox>
     </div>

@@ -15,3 +15,12 @@
     font-family: courier;
     font-style: bold;
 }
+
+.resource-card a {
+    text-decoration: none !important;
+    color: #6c4d7e !important;
+}
+
+.resource-card a:hover{
+    color: #BAA4C7 !important;
+}

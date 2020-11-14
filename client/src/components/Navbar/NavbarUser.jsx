@@ -50,18 +50,18 @@ const [navId, setNavId] = useState([])
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto">
-          <li className="nav-item">
+          <li className="nav-item dot">
             <Link to="/verified-resources-auth" className="nav-bar-link">
               Resources
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item dot">
             <Link to={"/profile/" + navId} className="nav-bar-link">
               Profile
             </Link>
           </li>
 
-          <li className="nav-item">
+          <li className="nav-item dot">
             <Link to="/auth-resource-category" className="nav-bar-link">
               Categories
             </Link>

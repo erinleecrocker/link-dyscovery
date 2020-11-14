@@ -1,17 +1,17 @@
 require('dotenv').config()
 const express = require("express");
 const mongoose = require("mongoose");
-// const path = require("path");
+const path = require("path");
 
 const app = express();
 
 const PORT = process.env.PORT || 3001;
 
 // Bringing in Controllers:
-const AuthController = require("./controllers/authController")
-const UserController = require("./controllers/userController");
-const ResourceController = require("./controllers/resourceController")
-const FeedbackController = require("./controllers/feedbackController");
+const AuthController = require("./Controllers/authController")
+const UserController = require("./Controllers/userController");
+const ResourceController = require("./Controllers/resourceController")
+const FeedbackController = require("./Controllers/feedbackController");
 
 
 // Define middleware here
@@ -52,6 +52,9 @@ app.use(AuthController)
   app.use("/api/resource", ResourceController);
   app.use("/api/feedback", FeedbackController);
 
+  app.get("/*", (req, res) => {
+    res.sendFile(path.join(__dirname, "./client/build/index.html"));
+  });
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);

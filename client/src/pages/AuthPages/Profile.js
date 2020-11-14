@@ -18,21 +18,23 @@ const Profile = () => {
   const [bio, setBio] = useState([]);
   const history = useHistory();
 
-  useEffect(() => {
-    // loadUser();
+  const { id } = useParams();
+  const loadUser = () => {
     API.getUser(id).then((res) => {
       // console.log(res)
       setOneUser(res.data);
     });
-  }, []);
+  };
 
-  const { id } = useParams();
-  // const loadUser = () => {
-  //   API.getUser(id).then((res) => {
-  //     // console.log(res)
-  //     setOneUser(res.data);
-  //   });
-  // };
+  useEffect(() => {
+    API.getUser(id).then((res) => {
+      // console.log(res)
+      setOneUser(res.data);
+    });
+  }, [id]);
+
+  
+  
 
   const handleEditSubmit = (e) => {
     

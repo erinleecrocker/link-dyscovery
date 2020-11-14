@@ -1,7 +1,7 @@
 require('dotenv').config()
 const express = require("express");
 const mongoose = require("mongoose");
-// const path = require("path");
+const path = require("path");
 
 const app = express();
 
@@ -52,6 +52,9 @@ app.use(AuthController)
   app.use("/api/resource", ResourceController);
   app.use("/api/feedback", FeedbackController);
 
+  app.get("/*", (req, res) => {
+    res.sendFile(path.join(__dirname, "./client/build/index.html"));
+  });
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);

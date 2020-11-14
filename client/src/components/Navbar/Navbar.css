@@ -17,6 +17,12 @@
     margin-bottom: 10px;
     margin-bottom: 10px;
     }
+
+    #nav-img {
+    margin-top: 5px;
+    width: 100px;
+    height: auto;
+    }
 }
 
   
@@ -30,7 +36,7 @@ li.dot a:after {
     padding-left: 15px;
 }
 
-img {
+#nav-img {
     margin-top: 5px;
     width: 250px;
     height: 57px;

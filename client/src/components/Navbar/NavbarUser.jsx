@@ -37,7 +37,7 @@ const NavbarUser = () => {
       </Link>
 
       <button
-        className=" navbar-light navbar-toggler"
+        className="navbar-light navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNav"
@@ -65,7 +65,7 @@ const NavbarUser = () => {
               Categories
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item dot">
             <Link to="/user-resources" className="nav-bar-link">
               Resources from Users
             </Link>

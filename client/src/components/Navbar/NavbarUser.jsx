@@ -1,19 +1,18 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 // import AxiosDefaults from "../../utils/axiosDefaults"
-
 import Logo from "../../images/250x57.png";
 // import { useHistory } from "react-router-dom";
 import "./Navbar.css";
 
 const NavbarUser = () => {
-const [navId, setNavId] = useState([])
+  const [navId, setNavId] = useState([]);
 
   useEffect(() => {
-    const userId = localStorage.getItem("loginId")
-    setNavId(userId)
-  }, [])
-  
+    const userId = localStorage.getItem("loginId");
+    setNavId(userId);
+  }, []);
+
   // const {_id} = token._id;
   // console.log(AxiosDefaults)
   // const history = useHistory();
@@ -38,7 +37,7 @@ const [navId, setNavId] = useState([])
       </Link>
 
       <button
-        className="navbar-light navbar-toggler"
+        className=" navbar-light navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNav"
@@ -70,12 +69,7 @@ const [navId, setNavId] = useState([])
             <Link to="/user-resources" className="nav-bar-link">
               Resources from Users
             </Link>
-            </li>
-            {/* <li className="nav-item">
-            <Link to="/login" className="nav-bar-link">
-              Login
-            </Link>
-          </li> */}
+          </li>
         </ul>
       </div>
     </nav>

@@ -18,9 +18,6 @@ img {
     height: 57px;
 }
 /* Toggler color */
-.navbar-toggler {
-    background-color: black;
-}
 
 .nav-item{
     text-align: right;

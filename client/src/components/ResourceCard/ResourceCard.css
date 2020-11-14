@@ -16,11 +16,11 @@
     font-style: bold;
 }
 
-a {
+.resource-card a {
     text-decoration: none !important;
     color: #6c4d7e !important;
 }
 
-a:hover{
+.resource-card a:hover{
     color: #BAA4C7 !important;
 }

@@ -24,7 +24,7 @@ const ResourceCard = (props) => {
               </h5>
             </div>
             <div className="row">
-              <div className="col-md-12">
+              <div className="col-md-12 resource-card">
               {/* Where the Web Address and Description will go */}
               <p> 
                 <b>Web Address:</b> <a href={props.url} target="_blank" rel="noreferrer"> {props.url}</a> 

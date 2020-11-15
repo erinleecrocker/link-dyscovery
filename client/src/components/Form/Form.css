@@ -9,7 +9,7 @@
 } */
 .label-form.col-6{
     padding-top: 5px;
-    text-align: right;
+    text-align: right !important;
     display: inline-block;
     
  
@@ -18,7 +18,7 @@
     content: ":"; 
 }
 .control-form.col-6{
-    text-align: left;
+    text-align: center;
     display: inline-block;
 }
 .col-6{
@@ -47,7 +47,7 @@
     .label-form.col-6::after{
         content: ":";
         display: inline-block;
-        align-content: right;
+        align-content: left !important;
         margin-left: auto;
     }
    

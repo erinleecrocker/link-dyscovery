@@ -11,6 +11,7 @@ router.get("/", (req, res) => {
 });
 
 router.get("/:id", (req, res) => {
+  console.log(req.params)
   db.User.findById({ _id: req.params.id }).then((foundUser) => {
     res.json(foundUser);
   }).catch((err) => {
@@ -19,7 +20,7 @@ router.get("/:id", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-  db.User.find(req.body).then((newUsers) => {
+  db.User.create(req.body).then((newUsers) => {
     res.json(newUsers);
   }).catch((err) => {
     console.log(err);

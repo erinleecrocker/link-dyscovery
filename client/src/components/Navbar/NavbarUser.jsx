@@ -70,6 +70,11 @@ const NavbarUser = () => {
               Resources from Users
             </Link>
           </li>
+          <li className="nav-item dot">
+            <Link to="/home" className="nav-bar-link">
+              Logout
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

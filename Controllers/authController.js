@@ -21,16 +21,12 @@ router.post("/api/signup", (req, res) => {
           password: hashedPassword,
         })
           .then((newUser) => {
+            console.log(newUser)
             const token = jwt.sign(
               { _id: newUser._id, emailAddress: newUser.emailAddress },
               process.env.SECRET
             );
-            res.json({
-              error: false,
-              data: token,
-              message:
-                "Email and Password accepted. Account successfully created.",
-            });
+            res.json(newUser);
           })
           .catch((err) => {
             console.log(err);

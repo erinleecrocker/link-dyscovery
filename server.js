@@ -58,7 +58,9 @@ app.use(AuthController)
 
 
 app.get("/api/images", async (req, res) => {
-  const {resources} = await cloudinary.search.expression("folder:link-dyscovery").sort_by("public_id", "desc").max_results(30).execute();
+  const {resources} = await cloudinary.search.expression("folder:link-dyscovery").sort_by("public_id", "desc").execute();
+  // const publicIds =  resources.map(file => file.public_id);
+  res.json(resources);
 })
 
   app.post("/api/upload", async (req, res) => {

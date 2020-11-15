@@ -17,15 +17,25 @@ const Profile = () => {
   const [gender, setGender] = useState([]);
   const [location, setLocation] = useState([]);
   const [bio, setBio] = useState([]);
+  // const [profileId, setProfileId] = useState([]);
 
   const [fileInput, setFileInput] = useState("");
   const [selectedFile, setSelectedFile] = useState("");
   const [previewSource, setPreviewSource] = useState("");
+  const [imageIds, setImageIds] = useState()
 
   const history = useHistory();
   const { id } = useParams();
+  // const id = localStorage.getItem("loginId")
+  // console.log(id)
+  // useEffect(() => {
+  //   const userId = localStorage.getItem("loginId")
+  //   setProfileId(userId);
+  // }, [])
+
 
   const loadUser = () => {
+    console.log(id)
     API.getUser(id).then((res) => {
       // console.log(res)
       setOneUser(res.data);
@@ -33,11 +43,8 @@ const Profile = () => {
   };
 
   useEffect(() => {
-    API.getUser(id).then((res) => {
-      // console.log(res)
-      setOneUser(res.data);
-    });
-  }, [id]);
+    loadUser()
+  }, []);
 
   const handleEditSubmit = (e) => {
     e.preventDefault();
@@ -84,12 +91,14 @@ const Profile = () => {
       setPreviewSource(reader.result);
     };
   };
+  
   const handleSubmitFile = (e) => {
     console.log("Submit button clicked");
     e.preventDefault();
     if (!previewSource) return;
     uploadImage(previewSource);
   };
+  
   const uploadImage = async (base64EncodedImage) => {
     // console.log(base64EncodedImage);
     console.log(id)
@@ -103,6 +112,21 @@ const Profile = () => {
       console.log(err);
     }
   };
+
+const loadImages = async () => {
+  try {
+    const res = await fetch("/api/images");
+    const data = await res.json();
+    setImageIds(data);
+    // console.log(data)
+  } catch (err) {
+    console.log(err)
+  }
+}
+
+useEffect(() => {
+  loadImages()
+}, [])
 
   return (
     <>

@@ -26,13 +26,13 @@ const ProfileBody = (props) => {
                       />
                     </div>
                     {/* CLOUDINARY PROFILE IMAGE */}
-                    <form className="form" onSubmit={props.handleSubmitFile}>
+                    {/* <form className="form" onSubmit={props.handleSubmitFile}>
                       <input className="form-input" type="file" name="image" onChange={props.handleFileInputChange} value={props.fileInput} ></input>
                       <button className="btn btn-outline-dark" type="submit">Submit</button>
                     </form>
                     {props.previewSource && (
                       <img src={props.previewSource} alt="chosen" style={{ height: '200px', width: "auto" }} />
-                    )}
+                    )} */}
                   </div>
                 </div>
                 <div className="col-md-4 input-labels">

@@ -1,5 +1,5 @@
 // React Imports
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 // Page Imports
 import CreateAccount from "./pages/CreateAccount";
@@ -34,19 +34,19 @@ import AuthProcessingDeficits from "./pages/AuthCategoryPages/AuthProcessingDefi
 // Component Imports
 // import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import { setAxiosDefaults } from "./utils/axiosDefaults";
+// import { setAxiosDefaults } from "./utils/axiosDefaults";
 // CSS Imports
 import "./App.css";
 // import HomePageContainer from './components/HomePageContainer/HomePageContainer';
 
 function App() {
-  const [jwt, setJwt] = useState("");
+  // const [jwt, setJwt] = useState("");
 
-  useEffect(() => {
-    if (jwt) {
-      setAxiosDefaults(jwt);
-    }
-  },[jwt])
+  // useEffect(() => {
+  //   if (jwt) {
+  //     setAxiosDefaults(jwt);
+  //   }
+  // },[jwt])
 
   return (
     <>

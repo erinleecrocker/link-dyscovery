@@ -19,7 +19,7 @@ const LogIn = () => {
       .post("/api/login", { emailAddress, password })
       .then((response) => {
         // console.log(response)
-        console.log(response.data);
+        // console.log(response.data);
         setJwt(response.data.data);
         localStorage.setItem("loginId", response.data._id)
         history.push("/profile/" + response.data._id);

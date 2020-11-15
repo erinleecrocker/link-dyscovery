@@ -5,7 +5,7 @@ const ProfileChanges = (props) => {
   return (
     <Modal
       {...props}
-      dialogClassName="modal-90w"
+      dialogclassName="modal-90w"
       aria-labelledby="modal-profile"
       centered
     >

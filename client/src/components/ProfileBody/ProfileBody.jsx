@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import ProfileChanges from "../ProfileChanges/ProfileChanges";
 import ProfilePlaceholder from "../../images/profilePlaceholder.png";
 
 import "./ProfileBody.css";
 
 const ProfileBody = (props) => {
-  const [modalShow, setModalShow] = React.useState(false);
+  // const [modalShow, setModalShow] = React.useState(false);
 
 
 
@@ -53,7 +53,7 @@ const ProfileBody = (props) => {
                           className="btn"
                           id="profile-button"
                           variant="primary"
-                          onClick={() => setModalShow(true)}
+                          onClick={props.handleModalShow}
                         >
                           Edit Profile
                         </button>
@@ -106,8 +106,9 @@ const ProfileBody = (props) => {
         </div>
         <div className="row mt-4">
           <ProfileChanges
-            show={modalShow}
-            onHide={() => setModalShow(false)}
+            show={props.modalShow}
+            
+            onHide={props.handleModalHide}
             handleFirstNameChange={props.handleFirstNameChange}
             handleLastNameChange={props.handleLastNameChange}
             handleUserNameChange={props.handleUserNameChange}

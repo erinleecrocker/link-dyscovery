@@ -17,7 +17,8 @@ router.get("/:id", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-    db.Feedback.find(req.body).then((newFeedback) => {
+    db.Feedback.create(req.body).then((newFeedback) => {
+      console.log(newFeedback)
         res.json(newFeedback);
       });
 });

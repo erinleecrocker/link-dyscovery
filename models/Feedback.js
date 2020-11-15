@@ -19,6 +19,14 @@ const FeedbackSchema = new Schema({
   },
 });
 
+// FeedbackSchema.virtual("averageRating").get(function () {
+//   const totalRating = this.rating.reduce((total, rating) => {
+//     return total + rating;
+//   });
+// });
+
+
+
 const Feedback = mongoose.model("Feedback", FeedbackSchema);
 
 module.exports = Feedback;

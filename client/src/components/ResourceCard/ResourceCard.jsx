@@ -27,7 +27,6 @@ const ResourceCard = (props) => {
       });
   };
 
-
   return (
     <>
       <div className="card mb-4" id="resource-card">

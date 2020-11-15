@@ -7,7 +7,7 @@
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 100px;
     box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.11), 2px 1px 5px 2px rgba(0, 0, 0, 0.11);
 }
@@ -34,4 +34,18 @@ h2{
 }
 div{
     border: none !important;
+}
+@media only screen and (max-width: 600px) {
+    .container.login-card{
+        width: 90%;
+        border: none #F9DBC1;
+        background-color: #F9DBC1;
+        top: 50%;
+        left: 50%;
+        margin: auto;
+        transform: translate(-50%, -50%);
+        margin-top: 10px;
+        margin-bottom: 100px;
+        box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.11), 2px 1px 5px 2px rgba(0, 0, 0, 0.11);
+    }
 }

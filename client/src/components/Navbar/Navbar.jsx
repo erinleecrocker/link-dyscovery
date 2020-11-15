@@ -1,15 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import Logo from "../../images/250x57.png";
-
 import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <nav className="navbar fixed-top navbar-expand-md navbar-custom">
       <Link to="/home" className="nav-bar-link">
-        <img src={Logo} alt="Link Dyscovery" />
+        <img src={Logo} alt="Link Dyscovery" id="nav-img" />
       </Link>
 
       <button
@@ -30,7 +28,7 @@ const Navbar = () => {
               Resources
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item dot">
             <Link to="/login" className="nav-bar-link">
               Login
             </Link>

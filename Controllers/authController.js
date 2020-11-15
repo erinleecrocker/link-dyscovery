@@ -61,7 +61,8 @@ router.post("/api/login", (req, res) => {
               { _id: foundUser._id, emailAddress: foundUser.emailAddress },
               process.env.SECRET
             );
-            res.json(foundUser);
+            res.json(foundUser)
+            ;
           } else {
             console.log("email not found")
             res.status(401).json({

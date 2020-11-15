@@ -95,7 +95,7 @@ const NewUserResource = () => {
           <div className="col-sm-6">
             <div className="row ml-5">
             <div className="form-group input-labels">
-            <label id="category-label" htmlFor="category">Select catagories that apply:</label>
+            <label id="category-label" htmlFor="category">Select the category that applies:</label>
     <DropDown 
        
         id="category"

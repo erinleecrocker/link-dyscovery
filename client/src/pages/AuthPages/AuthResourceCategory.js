@@ -11,24 +11,24 @@ const AuthResourceCategory = () => {
       <ResourceBox>
         <ResourceResultDisplay>
           <div className="row mb-sm-4">
-            <div ClassName="col-sm-4">
+            <div className="col-sm-4">
               <CategoryButton title="All Resource" link="/auth-resources" />
             </div>
-            <div ClassName="col-sm-4">
+            <div className="col-sm-4">
               <CategoryButton title="ADHD" link="/auth-adhd" />
             </div>
-            <div ClassName="col-sm-4">
+            <div className="col-sm-4">
               <CategoryButton title="Dyslexia" link="/auth-dyslexia" />
             </div>
           </div>
           <div className="row">
-            <div ClassName="col-sm-4">
+            <div className="col-sm-4">
               <CategoryButton title="Dyscalculia" link="/auth-dyscalculia" />
             </div>
-            <div ClassName="col-sm-4">
+            <div className="col-sm-4">
               <CategoryButton title="Dysgraphia" link="/auth-dysgraphia" />
             </div>
-            <div ClassName="col-sm-4">
+            <div className="col-sm-4">
               <CategoryButton
                 title="Processing Deficits"
                 link="/auth-processing-deficits"

@@ -47,6 +47,7 @@ router.post("/api/signup", (req, res) => {
 // Login
 router.post("/api/login", (req, res) => {
   const { emailAddress, password } = req.body;
+  console.log(req.body)
 
   db.User.findOne({ emailAddress: emailAddress }).then((foundUser) => {
     if (foundUser) {
@@ -63,6 +64,7 @@ router.post("/api/login", (req, res) => {
             res.json(foundUser)
             ;
           } else {
+            console.log("email not found")
             res.status(401).json({
               error: true,
               data: null,
@@ -77,6 +79,7 @@ router.post("/api/login", (req, res) => {
 
     // console.log(foundUser);
   }).catch((err) => {
+    console.log(err);
     res.status(500);
   });
 });

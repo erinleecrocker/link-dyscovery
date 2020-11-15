@@ -23,7 +23,7 @@ router.post("/api/signup", (req, res) => {
           .then((newUser) => {
             const token = jwt.sign(
               { _id: newUser._id, emailAddress: newUser.emailAddress },
-              process.env.SECRET
+              // process.env.SECRET
             );
             res.json({
               error: false,
@@ -62,7 +62,7 @@ router.post("/api/login", (req, res) => {
             // res.json(result)
             const token = jwt.sign(
               { _id: foundUser._id, emailAddress: foundUser.emailAddress },
-              process.env.SECRET
+              // process.env.SECRET
             );
             res.json(foundUser);
           } else {

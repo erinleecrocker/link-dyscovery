@@ -17,12 +17,6 @@ const ResourceCard = (props) => {
 
     // const getUserId = localStorage.getItem("loginId")
 
-<<<<<<< HEAD
-
-
-  const ratingChanged = () => {
-    setRating();
-=======
     axios
       .post("/api/feedback", { "rating": rating })
       .then((res) => {
@@ -31,7 +25,6 @@ const ResourceCard = (props) => {
       .catch((err) => {
         console.log(err);
       });
->>>>>>> f4c2eb413a930b802f07a74f12a37008e7c15f3f
   };
 
 
@@ -75,13 +68,9 @@ const ResourceCard = (props) => {
             </div>
             <div className="row justify-content-center">
               {/* This is where the Button to submit review will go */}
-<<<<<<< HEAD
-              <SubmitButton >Submit Rating</SubmitButton>
-=======
               <SubmitButton onClick={handleRatingSubmit}>
                 Submit Rating
               </SubmitButton>
->>>>>>> f4c2eb413a930b802f07a74f12a37008e7c15f3f
             </div>
           </div>
         </div>

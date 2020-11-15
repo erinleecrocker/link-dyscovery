@@ -23,6 +23,7 @@
 }
 .col-6{
     display: inline-block;
+    margin-top: 20px;
 }
 .right {
     float: right;
@@ -32,4 +33,31 @@
     /* right: 0px;
     width: 300px; */
     padding: 10px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .label-form.col-6{
+        padding-top: 5px;
+        text-align: left;
+        display: inline-flex;
+
+        
+     
+    }
+    .label-form.col-6::after{
+        content: ":";
+        display: inline-block;
+        align-content: right;
+        margin-left: auto;
+    }
+   
+    .control-form.col-6{
+        text-align: none;
+        display: inline-block;
+    }
+    .col-6{
+        display: none;
+        margin-top: 20px;
+    }
+
   }

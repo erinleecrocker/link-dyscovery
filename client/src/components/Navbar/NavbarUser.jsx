@@ -61,7 +61,7 @@ const NavbarUser = () => {
           </li>
           <li className="nav-item dot">
             <Link to="/user-resources" className="nav-bar-link">
-              Resources from Users
+              Community Resources
             </Link>
           </li>
           <li className="nav-item dot">

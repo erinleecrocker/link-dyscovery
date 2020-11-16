@@ -49,5 +49,5 @@ and community resources
         
 ### Questions :
 ---
-* email : erinleecrocker@gmail.com 
-* GitHub : http://www.github.com/erinleecrocker
+* email : erinleecrocker@gmail.com, ashlyn.marie.smith2@gmail.com, whileiwasthinking@yahoo.com
+* GitHub : http://www.github.com/erinleecrocker, http://www.github.com/AshlynMarie22, http://www.github.com/raleighc

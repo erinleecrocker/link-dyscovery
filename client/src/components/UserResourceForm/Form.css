@@ -42,5 +42,5 @@
     padding-bottom: 15px;
     padding-left: 30px;
     padding-right: 30px;
-    outline: solid 3px #8b6a9f80;
+    outline: solid 3px #8b6a9f80 !important;
 }

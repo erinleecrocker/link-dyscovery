@@ -87,14 +87,14 @@ const ProfileBody = (props) => {
                     <div className="row mb-4 mt-4 ml-4">
                       <div className="col-md-12">
                         <div className="row">
-                          <div className="col-md-12 input-labels-bold">
+                          {/* <div className="col-md-12 input-labels-bold">
                             User's Resources
                           </div>
                         </div>
                         <div className="row">
                           <div className="col-md-12 input-labels-bold">
                             User's Saved Resources
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     </div>

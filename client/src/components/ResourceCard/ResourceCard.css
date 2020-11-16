@@ -1,11 +1,4 @@
-#resource-card{
-    background-color:  #F7E3D3;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
-    outline: solid 3px #8b6a9f80;
-}
+
 
 .input-labels{
     font-family: courier;
@@ -23,4 +16,13 @@
 
 .resource-card a:hover{
     color: #BAA4C7 !important;
+}
+
+#resource-card{
+    background-color:  #F7E3D3;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: solid 3px #8b6a9f80;
 }

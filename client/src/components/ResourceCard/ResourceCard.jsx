@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import "./ResourceCard.css";
+
 import SubmitButton from "../Submit Button/SubmitButton";
 import StarsRating from "stars-rating";
 import axios from "axios";
+
+import "./ResourceCard.css";
 
 const ResourceCard = (props) => {
   const [rating, setRating] = useState(props.rating);
@@ -28,7 +30,7 @@ const ResourceCard = (props) => {
   };
 
   return (
-    <>
+    <div>
       <div className="card mb-4" id="resource-card">
         <div className="row">
           <div className="col-sm-9">
@@ -74,7 +76,7 @@ const ResourceCard = (props) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

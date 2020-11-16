@@ -26,7 +26,7 @@ const resourcesJSON =
         "category": "Dyslexia",
         "title": "International Dyslexia Association",
         "url": "https://dyslexiaida.org/",
-        "description": "TODO:"
+        "description": "This organization is for people living with dyslexia. It aims to create a future for all individuals who struggle with dyslexia and other related reading differences so that they may have richer, more robust lives and access to the tools and resources they need."
     },
     {
         "id": 5,
@@ -40,7 +40,7 @@ const resourcesJSON =
         "category": "ADHD",
         "title": "Attention Deficit Disorder Association",
         "url": "https://add.org/resources/",
-        "description": "TODO:"
+        "description": "Our goal at ADDA is to help adults with ADHD live better lives. To help them do just that, we provide our members with information, resources and support. We also work to build awareness and to provide accurate information on adult ADHD to policy makers, the press and the general public."
     },
     {
         "id": 7,
@@ -96,7 +96,7 @@ const resourcesJSON =
         "category": "Dyscalculia",
         "title": "Math Geek Mama",
         "url": "https://mathgeekmama.com/math-resources/dyscalculia-resources/",
-        "description": "TODO:"
+        "description": "This is a community site for a mother that has built a network for helping teach children with Dyscalculia."
     },
     {
         "id": 15,
@@ -125,6 +125,34 @@ const resourcesJSON =
         "title": "Learn How To Become",
         "url": "https://www.learnhowtobecome.org/career-resource-center/resources-for-college-students-with-disabilities/",
         "description": "This site contains a guide created to bring awareness to rights and responsibilities of students with disabilities, help them learn how to take advantage of myriad services, and provide expert advice from a postsecondary education administrator who has spent years serving college students with disabilities."
+    },
+    {
+        "id": 19,
+        "category": "Dysgraphia",
+        "title": "Adult Dysgraphia Testing",
+        "url": "https://ediagnosticlearning.com/adult-dysgraphia/",
+        "description": "This site can help someone who struggles with writing and muscle control to learn more about dysgraphia and find a route to talking to a professional for diagnosis and learning assistance."
+    },
+    {
+        "id": 19,
+        "category": "Dysgraphia",
+        "title": "Dysgraphia Support Groups",
+        "url": "http://lifey.org/dysgraphia/#support-groups",
+        "description": "This site contains a list of current support groups for people living with Dysgraphia."
+    },
+    {
+        "id": 19,
+        "category": "Processing Deficits",
+        "title": "National Coalition of Auditory Processing Disorders",
+        "url": "https://www.ncapd.org/Home_Page.html",
+        "description": "National Coalition of Auditory Processing Disorders is a site where people can learn more about APD and treatment processes."
+    },
+    {
+        "id": 19,
+        "category": "Processing Deficits",
+        "title": "Visual Processing Resources",
+        "url": "http://www.ldonline.org/article/Visual_Processing_Disorders%3A_In_Detail",
+        "description": "This site categorizes a range of different visual processing disorders for people to better understand the experiences they are having difficulty with so they can seek more specific help."
     }
   ]
   export default resourcesJSON;

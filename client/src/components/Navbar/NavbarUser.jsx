@@ -31,7 +31,7 @@ const NavbarUser = () => {
   // };
 
   return (
-    <nav className="navbar fixed-top navbar-expand-md navbar-custom">
+    <nav className="navbar fixed-top navbar-expand-xl navbar-custom">
       <Link to="/auth-home" className="nav-bar-link">
         <img src={Logo} alt="Link Dyscovery" />
       </Link>

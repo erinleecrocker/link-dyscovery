@@ -13,7 +13,7 @@ const VerifiedResources = () => {
   const [allResources, setAllResources] = useState([]);
 
   const ProcessingDeficits = allResources.filter(function (processingDeficitsResource){
-      return processingDeficitsResource.category === "ProcessingDeficits";
+      return processingDeficitsResource.category === "Processing Deficits";
   })
 
   useEffect(() => {

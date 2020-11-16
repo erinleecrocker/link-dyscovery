@@ -12,7 +12,7 @@ const UserResources = () => {
   const [allUserResources, setAllUserResources] = useState([]);
 
   const ProcessingDeficits = allUserResources.filter(function (processingDeficitsUserResource){
-    return processingDeficitsUserResource.category === "ProcessingDeficits";
+    return processingDeficitsUserResource.category === "Processing Deficits";
 })
 
   useEffect(() => {

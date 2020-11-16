@@ -1,3 +1,12 @@
+#resource-box{
+    background-color: #F9DBC1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 1603px;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.11), 2px 1px 5px 2px rgba(0, 0, 0, 0.11);
+    padding: 50px;
+}
 
 #category-label-1{
     font-size: 15pt !important;
@@ -9,9 +18,3 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.048), 2px 4px 5px 2px rgba(0, 0, 0, 0.048);
 }
 
-#resource-box{
-    background-color: #F9DBC1;
-    margin-top: 20px;
-    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.11), 2px 1px 5px 2px rgba(0, 0, 0, 0.11);
-    padding: auto;
-};  

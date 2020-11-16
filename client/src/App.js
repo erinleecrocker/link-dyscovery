@@ -6,28 +6,34 @@ import CreateAccount from "./pages/CreateAccount";
 import Home from "./pages/Home";
 import VerifiedResources from "./pages/VerifiedResources";
 import Login from "./pages/Login";
-import AuthHome from "./pages/AuthPages/AuthHome";
-import AuthVerifiedResources from "./pages/AuthPages/AuthVerifiedResources";
-import Profile from "./pages/AuthPages/Profile";
-import UserResources from "./pages/AuthPages/UserResources";
-import UserResourceCategory from "./pages/AuthPages/UserResourceCategory";
-import UserADHD from "./pages/UserResCategory/UserADHD";
-import UserDyslexia from "./pages/UserResCategory/UserDyslexia";
-import UserDyscalculia from "./pages/UserResCategory/UserDyscalculia";
-import UserDysgraphia from "./pages/UserResCategory/UserDysgraphia";
-import UserProcessingDeficits from "./pages/UserResCategory/UserProcessingDeficits";
+//Non-User Verified Resource Category Pages
 import ResourceCategory from "./pages/ResourceCategory";
 import ADHD from "./pages/CategoryPages/ADHD";
 import Dyscalculia from "./pages/CategoryPages/Dyscalculia";
 import Dysgraphia from "./pages/CategoryPages/Dysgraphia";
 import Dyslexia from "./pages/CategoryPages/Dyslexia";
 import ProcessingDeficits from "./pages/CategoryPages/ProcessingDeficits";
+//Authorized User Pages
+import AuthHome from "./pages/AuthPages/AuthHome";
+import AuthVerifiedResources from "./pages/AuthPages/AuthVerifiedResources";
+import Profile from "./pages/AuthPages/Profile";
+import UserResources from "./pages/AuthPages/UserResources";
+import UserResourceCategory from "./pages/AuthPages/UserResourceCategory";
+//Authorized Verified Resource Category Pages
 import AuthResourceCategory from "./pages/AuthPages/AuthResourceCategory";
 import AuthADHD from "./pages/AuthCategoryPages/AuthADHD";
 import AuthDyscalculia from "./pages/AuthCategoryPages/AuthDyscalculia";
 import AuthDysgraphia from "./pages/AuthCategoryPages/AuthDysgraphia";
 import AuthDyslexia from "./pages/AuthCategoryPages/AuthDyslexia";
 import AuthProcessingDeficits from "./pages/AuthCategoryPages/AuthProcessingDeficits";
+//User Contributed Resource Category Pages
+import UserADHD from "./pages/UserResCategory/UserADHD";
+import UserDyslexia from "./pages/UserResCategory/UserDyslexia";
+import UserDyscalculia from "./pages/UserResCategory/UserDyscalculia";
+import UserDysgraphia from "./pages/UserResCategory/UserDysgraphia";
+import UserProcessingDeficits from "./pages/UserResCategory/UserProcessingDeficits";
+
+
 
 
 

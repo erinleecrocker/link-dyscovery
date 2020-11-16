@@ -10,6 +10,7 @@
     margin-top: 10px;
     margin-bottom: 100px;
     box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.11), 2px 1px 5px 2px rgba(0, 0, 0, 0.11);
+    border-radius: 4px;
 }
 h2{
     text-align: center;
@@ -47,5 +48,6 @@ div{
         margin-top: 10px;
         margin-bottom: 100px;
         box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.11), 2px 1px 5px 2px rgba(0, 0, 0, 0.11);
+        border-radius: 4px;
     }
 }

@@ -136,23 +136,23 @@ const resourcesJSON =
     {
         "id": 19,
         "category": "Dysgraphia",
-        "title": "",
-        "url": "",
-        "description": ""
+        "title": "Dysgraphia Support Groups",
+        "url": "http://lifey.org/dysgraphia/#support-groups",
+        "description": "This site contains a list of current support groups for people living with Dysgraphia."
     },
     {
         "id": 19,
-        "category": "",
-        "title": "",
-        "url": "",
-        "description": ""
+        "category": "Processing Deficits",
+        "title": "National Coalition of Auditory Processing Disorders",
+        "url": "https://www.ncapd.org/Home_Page.html",
+        "description": "National Coalition of Auditory Processing Disorders is a site where people can learn more about APD and treatment processes."
     },
     {
         "id": 19,
-        "category": "",
-        "title": "",
-        "url": "",
-        "description": ""
+        "category": "Processing Deficits",
+        "title": "Visual Processing Resources",
+        "url": "http://www.ldonline.org/article/Visual_Processing_Disorders%3A_In_Detail",
+        "description": "This site categorizes a range of different visual processing disorders for people to better understand the experiences they are having difficulty with so they can seek more specific help."
     }
   ]
   export default resourcesJSON;

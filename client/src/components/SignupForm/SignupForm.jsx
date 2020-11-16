@@ -39,7 +39,7 @@ const SignupForm = ({ buttonText, handleSubmit, slug, cardText }) => {
           // ref={firstInputRef}
         />
       </FormGroup>
-      <div>
+      
       <FormGroup>
         <FormLabel htmlFor="signup-password">Password</FormLabel>
         <FormControl
@@ -51,7 +51,7 @@ const SignupForm = ({ buttonText, handleSubmit, slug, cardText }) => {
           onChange={(e) => setPassword(e.target.value)}
         />
       </FormGroup>
-      </div>
+      
       <div className="col text-center">
         <SubmitButton disabled={!validateForm()} type="submit" className="btn btn-primary">
           {buttonText}

@@ -13,7 +13,7 @@ const VerifiedResources = () => {
   const [allResources, setAllResources] = useState([]);
 
   const ProcessingDeficits = allResources.filter(function (processingDeficitsResource){
-      return processingDeficitsResource.category === "ProcessingDeficits";
+      return processingDeficitsResource.category === "Processing Deficits";
   })
 
   useEffect(() => {
@@ -41,7 +41,6 @@ const loadJSON = () => {
           categoryTitle="Processing Deficits"
           categoryLink="/resource-category" />
           <ResourceResultDisplay>
-            Coming soon!
             {ProcessingDeficits.map((resource) => {
               return <ResourceCard 
               key={resource.id}

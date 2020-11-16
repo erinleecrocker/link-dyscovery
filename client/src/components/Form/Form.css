@@ -1,6 +1,6 @@
 .form-group{
     display: inline-block;
-    align-content: right !important;
+    width: 100% !important;
 }
 /* #formgroup{
     display:grid;

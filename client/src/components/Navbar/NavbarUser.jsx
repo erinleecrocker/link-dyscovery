@@ -59,12 +59,6 @@ const NavbarUser = () => {
               Profile
             </Link>
           </li>
-
-          <li className="nav-item dot">
-            <Link to="/auth-resource-category" className="nav-bar-link">
-              Categories
-            </Link>
-          </li>
           <li className="nav-item dot">
             <Link to="/user-resources" className="nav-bar-link">
               Resources from Users

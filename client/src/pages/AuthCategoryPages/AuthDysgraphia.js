@@ -41,7 +41,7 @@ const loadJSON = () => {
           categoryTitle="Dysgraphia"
           categoryLink="/auth-resource-category" />
           <ResourceResultDisplay>
-            Coming Soon!
+           
             {Dysgraphia.map((resource) => {
               return <ResourceCard 
               key={resource.id}

@@ -41,7 +41,7 @@ const loadJSON = () => {
           categoryTitle="Processing Deficits"
           categoryLink="/auth-resource-category" />
           <ResourceResultDisplay>
-            Coming soon!
+            
             {ProcessingDeficits.map((resource) => {
               return <ResourceCard 
               key={resource.id}
